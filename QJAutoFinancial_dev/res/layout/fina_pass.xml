@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置 关于我们 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+	
+    <include layout="@layout/title" />
+	
+    <View style="@style/viewLineTop" />
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:orientation="vertical" >
+		
+        <RelativeLayout
+            android:id="@+id/rl_account"
+            style="@style/tableRow" >
+			
+            <TextView
+                style="@style/textNormal"
+                android:text="原密码" />
+				
+            <EditText
+                android:id="@+id/Source_Pass"
+                style="@style/editNormalRightPass"
+                android:textColorHint="#33000000"
+                android:hint="请输入原始登录密码" />
+            
+        </RelativeLayout>
+		
+        <View style="@style/viewLineMiddle" />
+		
+        <RelativeLayout
+            android:id="@+id/rl_card"
+            style="@style/tableRow" >
+			
+            <TextView
+                style="@style/textNormal"
+                android:text="新密码" />
+			
+            <EditText
+                android:id="@+id/Pass_new"
+                style="@style/editNormalRightPass"
+                android:textColorHint="#33000000"
+                android:hint="请输入新密码" />
+        </RelativeLayout>
+		
+        <View style="@style/viewLineMiddle" />
+		
+        <RelativeLayout
+            android:id="@+id/rl_us"
+            style="@style/tableRow" >
+			
+            <TextView
+                style="@style/textNormal"
+                android:text="确认密码" />
+			
+            <EditText
+                android:id="@+id/Pass_confirm"
+                style="@style/editNormalRightPass"
+                android:textColorHint="#33000000"
+                android:hint="请重新输入新密码" />
+        </RelativeLayout>
+    </LinearLayout>
+	
+    <View style="@style/viewLine" />
+	
+    <LinearLayout
+        style="@style/linearHorizontal"
+        android:layout_marginTop="10dip">
+		
+        <Button
+            android:id="@+id/But_Sure"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_normal_selector"
+            android:text="确定" />
+		
+        <Button
+            android:id="@+id/But_reset"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_white_selector"
+            android:text="重置" />
+        
+    </LinearLayout>
+
+</LinearLayout>

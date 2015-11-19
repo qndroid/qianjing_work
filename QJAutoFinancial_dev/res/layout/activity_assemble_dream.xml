@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+   
+
+    <RelativeLayout style="@style/relative" >
+
+        <TextView
+            android:id="@+id/tv_goal"
+            style="@style/textNormal"
+            android:text="投资金额" />
+
+        <TextView
+            android:id="@+id/et_goal_label"
+            style="@style/textNormalRight"
+            android:text="元" />
+
+        <EditText
+            android:id="@+id/et_small_init"
+            style="@style/editRightDemical"
+            android:layout_toLeftOf="@id/et_goal_label"
+            android:layout_toRightOf="@id/tv_goal"
+            />
+    </RelativeLayout>
+     <RelativeLayout style="@style/relative" >
+        <TextView
+            android:id="@+id/tv_long"
+            style="@style/textNormal"
+            android:text="预计期限" />
+
+        <TextView
+            android:id="@+id/et_long_label"
+            style="@style/textNormalRight"
+            android:text="个月" />
+
+        <EditText
+            android:id="@+id/et_small_nmonth"
+            style="@style/editRightNumber"
+            android:layout_toLeftOf="@id/et_long_label"
+            android:layout_toRightOf="@id/tv_long"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/btnNormal"
+        android:text="@string/BTN_SUBMIT" />
+</LinearLayout>

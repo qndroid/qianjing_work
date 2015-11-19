@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 申购确认 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include 
+        android:id="@+id/title_bar"
+        layout="@layout/include_title" />
+
+    <ScrollView 
+        style="@style/scroll" 
+        android:layout_below="@id/title_bar"
+        >
+
+        <LinearLayout style="@style/linear" >
+
+            <LinearLayout style="@style/linearWhite" >
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="基金名称" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/textNormalRight"
+                        />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="类型" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        style="@style/textNormalRight"
+                        />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="收费方式" />
+
+                    <TextView
+                        android:id="@+id/tv_way"
+                        style="@style/textNormalRight"
+                        />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="投资金额" />
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        style="@style/textNormalRight"
+                        />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout 
+                    android:id="@+id/rl_bank"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="银行卡" />
+
+                    <TextView
+                        android:id="@+id/tv_card"
+                        style="@style/textNormalRight"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout 
+                    android:id="@+id/rl_bankno"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="银行卡" />
+					<ImageView 
+					    style="@style/imageRight"
+					    android:src="@drawable/img_right_arrow2"
+					    />
+                    <TextView
+                        android:id="@+id/tv_card1"
+                        style="@style/textNormalRight"
+                        android:layout_marginRight="30dip"
+                        android:text="请选择银行卡"
+                        />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="支付方式" />
+
+                    <TextView
+                        android:id="@+id/tv_trade_way"
+                        style="@style/textNormalRight"
+                        />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linearWhite" >
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="登录密码" />
+
+                    <EditText
+                        android:id="@+id/et_pass"
+                        style="@style/editNormalRightPass"
+                        android:hint="请输入密码" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/btnNormal"
+                android:text="确认付款" />
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/wheel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/three_wheel_layout"
+        android:visibility="gone" />
+    
+</RelativeLayout>

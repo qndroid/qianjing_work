@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/tableRow" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/textNormal"
+            android:layout_marginRight="10dip"
+            />
+        <TextView
+            android:id="@+id/tv_value"
+            style="@style/textNormalRight"
+            android:layout_toRightOf="@id/tv_name"
+            android:ellipsize="end"
+            />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

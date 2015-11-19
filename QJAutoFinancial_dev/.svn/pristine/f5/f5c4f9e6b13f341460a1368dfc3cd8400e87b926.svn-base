@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qianjing="http://schemas.android.com/apk/res/com.qjautofinancial"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+
+    <com.qianjing.finance.view.custom.VIPFreeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/assemble_details_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/total_assets_unit"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="持仓明细>"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_total_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/tv_buying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="货基未付收益(元)"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_unpaid_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="0.00"
+                        android:textColor="@color/gray_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    style="@style/viewVertical"
+                    android:layout_width="0.1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_grey_middle" />
+
+                <LinearLayout
+                    android:id="@+id/ll_trade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="累计盈亏（元）"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_total_profit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="0.00"
+                        android:textColor="@color/gray_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--
+    <LinearLayout
+        style="@style/linearHorizontal"
+        android:layout_marginTop="10dp" >
+
+        
+        
+        <Button
+            android:id="@+id/btn_redeem"
+            style="@style/btnNormal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/btn_redem" />
+        
+        <Button
+            android:id="@+id/btn_buy"
+            style="@style/btnNormal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/btn_invest" />
+        
+    </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip" >
+
+                <Button
+                    android:id="@+id/btn_redeem"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_whitewithsolid_selector"
+                    android:padding="10dip"
+                    android:text="@string/btn_redem"
+                    android:textColor="@drawable/gray_text" />
+
+                <Button
+                    android:id="@+id/btn_buy"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_orange_selector"
+                    android:padding="10dip"
+                    android:text="@string/btn_invest"
+                    android:textColor="@drawable/white" />
+            </LinearLayout>
+
+            <com.qianjing.finance.view.virtual.FundDetailsView
+                android:id="@+id/fdv_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                qianjing:setting_detail="@string/setting_detail" />
+
+            <RelativeLayout
+                android:id="@+id/rl_assemble_copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#eeffffff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="复制到真实投资"
+                    android:textColor="@color/blue_agreement"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+
+</LinearLayout>

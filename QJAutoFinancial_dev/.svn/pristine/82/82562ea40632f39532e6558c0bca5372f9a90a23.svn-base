@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res/com.qjautofinancial"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <com.qjautofinancial.guide.GuideViewGroup 
+        android:id="@+id/mygroup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+        
+    
+    
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <com.qjautofinancial.guide.GuideView 
+            android:id="@+id/circle_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            test:color_selected="@android:color/black"
+            test:color_unselected="@android:color/black"/>
+        
+        
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Back"
+            android:visibility="gone" />
+        
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Next"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

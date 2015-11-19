@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_efeff4" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title" >
+
+        <RelativeLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/icon_redeemp_confirm" />
+
+            <com.qianjing.finance.view.indictorview.CenterTextView
+                android:id="@+id/tip_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/redeemp_confirm_tip_one"
+                android:textColor="@color/color_9d9dac"
+                android:textSize="14sp" />
+
+            <com.qianjing.finance.view.indictorview.CenterTextView
+                android:id="@+id/tip_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tip_one"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/redeemp_confirm_tip_two"
+                android:textColor="@color/color_9d9dac"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/tip_two"
+                android:layout_marginTop="17dp"
+                android:background="@color/deep_stroke" />
+
+            <RelativeLayout
+                android:id="@+id/fund_layout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/divider"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/fund_name"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/all_redeemp_fen"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/redeemp_evaluate_fen"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_cccccc" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1.5dp"
+                    android:background="@color/color_cccccc" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fund_layout"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/redeem_btn_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/content_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_normal_selector"
+                android:gravity="center"
+                android:text="@string/next_step"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

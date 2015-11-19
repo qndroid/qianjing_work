@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/fund_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="180dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fund_redeem_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fund_percent_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/reason_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fund_name_view"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/bg_failed_reason"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingTop="7dp"
+        android:textColor="@color/color_9f880e"
+        android:textSize="13sp" />
+
+</RelativeLayout>

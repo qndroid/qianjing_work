@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="layout_Login">#efeff4</drawable>
+    <!-- 红色 -->
+    <color name="red">#ff3b3b</color>
+    <color name="white">#ffffff</color>
+    <!-- 银行卡背景色 -->
+    <color name="gray_bg_card">#c0c4cf</color>
+
+    <drawable name="light_yellow">#f9e266</drawable>
+    <!-- 标题文字颜色 -->
+    <drawable name="title_text_color">#ffffff</drawable>
+    <!-- 白色 -->
+    <drawable name="white">#ffffff</drawable>
+    <!-- 灰色文字 -->
+    <drawable name="gray_text">#666666</drawable>
+    <!-- 活期宝黄色文字 -->
+    <drawable name="yellow_text">#ffb023</drawable>
+    <!-- 灰色按钮 -->
+    <drawable name="gray_button">#6b6e74</drawable>
+    <!-- 灰色1按钮 -->
+    <drawable name="gray1_button">#adadad</drawable>
+    <!-- 进度条前景粉色 -->
+    <drawable name="pink_front">#fc8888</drawable>
+    <!-- 灰色 -->
+    <drawable name="gray">#e3e3e3</drawable>
+    <!-- 灰色 底色 -->
+    <drawable name="gray_background">#efefef</drawable>
+    <!-- 灰色边框 -->
+    <drawable name="gray_frame">#c8c7cc</drawable>
+    <!-- 蓝色 -->
+    <drawable name="blue">#347cb4</drawable>
+    <!-- 黄色 -->
+    <drawable name="yellow">#f1ab62</drawable>
+    <!-- 浅蓝色 -->
+    <drawable name="light_blue">#79d2f2</drawable>
+    <!-- 浅绿色 -->
+    <drawable name="light_green">#2ecc72</drawable>
+    <!-- 粉色 -->
+    <drawable name="pink">#f16051</drawable>
+    <!-- 橙黄色 -->
+    <drawable name="orange">#FFFF5000</drawable>
+
+    <!-- viewline灰色 -->
+    <drawable name="line_gray">#77b3b3b3</drawable>
+    <!-- viewline Dialog -->
+    <drawable name="line_gray_dialog">#b7b6b7</drawable>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 绿色 -->
+    <drawable name="green">#00d700</drawable>
+    <!-- 透明 -->
+    <drawable name="transparent">#00000000</drawable>
+    <!-- 表格内容标题文字颜色 -->
+    <drawable name="title_text_content_color">#494949</drawable>
+    <!-- title背景颜色 -->
+    <drawable name="title_bg">#ff3b3b</drawable>
+    <!-- barChart背景颜色 -->
+    <drawable name="barchart_bg">#eaedf1</drawable>
+    <!-- barChart前景颜色 -->
+    <drawable name="barchart_before">#1fbba6</drawable>
+    <drawable name="layout_main">#efeff4</drawable>
+
+    <!-- Chinapay plugin begin -->
+    <color name="cp_light_white">#ffffff</color>
+    <color name="cp_red">#FF0000</color>
+    <!-- Chinapay plugin end -->
+    <!-- 深灰色 -->
+    <drawable name="gray_profit">#6c6c6c</drawable>
+    <drawable name="main_tab_back">#eef7f8f9</drawable>
+
+    <color name="orange_buttondark">#f88050</color>
+    <!-- 橘黄色提示语颜色 -->
+    <color name="orange_alerttext">#ff5000</color>
+    <color name="orange_start">#fe4635</color>
+    <color name="blue_agreement">#4488ff</color>
+    <color name="orange_text">#ff864f</color>
+    <color name="color_00000000">#00000000</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="orange_button">#ff874e</color>
+    <color name="color_e4e4e4">#e4e4e4</color>
+    <color name="color_e4e4e5">#e4e4e5</color>
+    <color name="color_6c6c6c">#6c6c6c</color>
+    <color name="color_e41f23">#e41f23</color>
+    <color name="color_bcbcbc">#bcbcbc</color>
+    <color name="color_e9e8ee">#e9e8ee</color>
+    <color name="color_f0eff5">#f0eff5</color>
+    <color name="color_d3d3d3">#d3d3d3</color>
+    <color name="color_d7d7d7">#d7d7d7</color>
+    <color name="color_efeff4">#efeff4</color>
+    <color name="color_c7c7c7">#c7c7c7</color>
+    <color name="color_a4a4a4">#a4a4a4</color>
+    <color name="color_c6c6c6">#c6c6c6</color>
+    <color name="color_c8c7cc">#c8c7cc</color>
+    <color name="gray_black">#7a7a7a</color>
+    <color name="color_307d1b">#307d1b</color>
+    <color name="grid_line_color">#cccccc</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_fb7725">#fb7725</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_929292">#929292</color>
+    <color name="color_2f7f1b">#2f7f1b</color>
+    <color name="color_4165c6">#4165c6</color>
+    <color name="color_7cb6d7">#7cb6d7</color>
+    <color name="color_7bb6d5">#7bb6d5</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_ececec">#ececec</color>
+    <color name="color_efefef">#efefef</color>
+    <color name="color_fc8987">#fc8987</color>
+    <color name="color_4068dd">#4068dd</color>
+    <color name="color_9d9dac">#9d9dac</color>
+    <color name="color_00ffffff">#00ffffff</color>
+    <color name="color_f5f5f9">#f5f5f9</color>
+    <color name="color_9908152d">#9908152d</color>
+    <color name="color_e41e23">#e41e23</color>
+    <color name="color_fffa89">#fffa89</color>
+    <color name="color_dadada">#dadada</color>
+    <color name="color_e2e2e2">#e2e2e2</color>
+    <color name="color_d7e0f1">#d7e0f1</color>
+    <color name="color_9098b4">#9098b4</color>
+    <color name="color_866a6a">#866a6a</color>
+    <color name="color_4d607d">#4d607d</color>
+    <color name="color_646784">#646784</color>
+    <color name="color_b8f2ff">#b8f2ff</color>
+
+    <!-- sliding tab -->
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- 我的基金 -->
+    <color name="color_grey_middle">#D5D6D5</color>
+    <color name="color_grey_light">#F4F0F0</color>
+    <color name="color_grey_deep">#ADAEAD</color>
+    <color name="color_green_lose">#2C8745</color>
+    <color name="color_red_profit">#4643E7</color>
+    <color name="color_history_item">#7B7B7B</color>
+    <color name="color_yellow">#f7ecb9</color>
+    <color name="color_line">#cdcdcd</color>
+    <!-- 1.3.2 -->
+    <color name="color_5ac590">#5ac590</color>
+
+    <!-- 1.4.0深度定制版 -->
+    <color name="color_7ea1de">#7ea1de</color>
+    <color name="color_7aa7d6">#7aa7d6</color>
+    <color name="color_73adcd">#73adcd</color>
+    <color name="color_6cb4c4">#6cb4c4</color>
+    <color name="color_66bbba">#66bbba</color>
+    <color name="color_63c6a8">#63c6a8</color>
+    <color name="color_63cd99">#63cd99</color>
+    <color name="color_6bce90">#6bce90</color>
+    <color name="color_7dce8a">#7dce8a</color>
+    <color name="color_96cc84">#96cc84</color>
+    <color name="color_b2c97d">#b2c97d</color>
+    <color name="color_d3c477">#d3c477</color>
+    <color name="color_e9be72">#e9be72</color>
+    <color name="color_fab76d">#fab76d</color>
+    <color name="color_ffae68">#ffae68</color>
+    <color name="color_ff9c60">#ff9c60</color>
+    <color name="color_f87653">#f87653</color>
+    <color name="color_ff8a5a">#ff8a5a</color>
+    <color name="color_f0674e">#f0674e</color>
+    <color name="color_e85548">#e85548</color>
+    <color name="color_5ba7e1">#5ba7e1</color>
+    <color name="color_b19ee0">#b19ee0</color>
+    <color name="color_e7a3e5">#e7a3e5</color>
+    <color name="color_5a79b7">#5a79b7</color>
+    <color name="color_a6d0e6">#a6d0e6</color>
+    <color name="color_e1e1e1">#e1e1e1</color>
+    <color name="color_ff985a">#ff985a</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_fd4634">#fd4634</color>
+    <color name="color_5a6572">#5a6572</color>
+    <color name="color_ff4438">#ff4438</color>
+    <color name="color_c0c4ce">#c0c4ce</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="color_3f4352">#3f4352</color>
+    <color name="color_9f880e">#9f880e</color>
+    <color name="color_c0805a">#c0805a</color>
+    <color name="color_62917a">#62917a</color>
+    <color name="color_6f84a9">#6f84a9</color>
+    <color name="color_d6e0f1">#d6e0f1</color>
+    <color name="color_66b48e">#66b48e</color>
+    <color name="color_8fa5bc">#8fa5bc</color>
+    <color name="color_4c9eb6ff">#4c9eb6ff</color>
+    <color name="color_e5ebf0">#e5ebf0</color>
+    <color name="color_cdcdcd">#cdcdcd</color>
+    <color name="color_ff7070">#ff7070</color>
+    <color name="color_969696">#969696</color>
+    <color name="color_b6b6b6">#b6b6b6</color>
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_161616">#161616</color>
+    <color name="color_a6b4d5">#a6b4d5</color>
+    <color name="color_f9dfde">#f9dfde</color>
+
+    <!-- 新版通用色值 -->
+    <!-- VI红 -->
+    <color name="red_VI">#ff3b3b</color>
+    <!-- 砖头红 -->
+    <color name="red_brick">#f0674e</color>
+    <!-- 橙色 -->
+    <color name="orange">#ff985a</color>
+    <!-- 黄色 -->
+    <color name="yellow">#e9be72</color>
+    <!-- 绿色 -->
+    <color name="green">#63cd99</color>
+    <!-- 钴蓝 -->
+    <color name="blue_cobalt">#7ea1de</color>
+    <!-- 湖蓝 -->
+    <color name="blue">#5ba7e1</color>
+    <!-- 深蓝 -->
+    <color name="blue_deep">#5a79b7</color>
+    <!-- 浅蓝 -->
+    <color name="blue_low">#a6d0e6</color>
+    <!-- 紫色 -->
+    <color name="violet">#b19ee0</color>
+    <!-- 粉色 -->
+    <color name="pink">#e7a3e5</color>
+    <!-- 深蓝灰 -->
+    <color name="blue_deep_grey">#5a6572</color>
+    <!-- 浅蓝灰 -->
+    <color name="blue_light_grey">#c0c4ce</color>
+
+    <!-- 深灰字 -->
+    <color name="grey_deep_txt">#333333</color>
+    <!-- 中灰字 -->
+    <color name="grey_middle_txt">#666666</color>
+    <!-- 浅灰字 -->
+    <color name="grey_low_txt">#999999</color>
+    <!-- 深描边 -->
+    <color name="deep_stroke">#cccccc</color>
+    <!-- 浅描边 -->
+    <color name="low_stroke">#e1e1e1</color>
+    <!--  -->
+    <color name="grey_metal">#F7F8F7</color>
+
+    <!-- 历史记录详情页 -->
+    <color name="text_common1">#8f97a9</color>
+    <color name="text_common2">#4f5464</color>
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="bg_assemble_config">#ffffff</color>
+    <color name="assets_text">#ff9098b4</color>
+
+</resources>

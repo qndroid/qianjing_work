@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_bg"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_assemble_aip_detail"
+        android:textColor="@color/blue_deep_grey"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_aip_detail"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/assemble_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/assemble_name_two"
+            android:textColor="@color/grey_middle_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_assemble_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/assemble_name_view"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/assemble_name_view"
+            android:textColor="@color/grey_deep_txt"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/chareg_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assemble_name_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/timing_charge_way"
+            android:textColor="@color/grey_middle_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/chareg_value_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/chareg_view"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/chareg_view"
+            android:textColor="@color/grey_deep_txt"
+            android:textSize="17sp"
+            android:text="前端收费" />
+
+        <TextView
+            android:id="@+id/pad_way_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chareg_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/timing_paid_way"
+            android:textColor="@color/grey_middle_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_pay_way_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pad_way_view"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/pad_way_view"
+            android:textColor="@color/grey_deep_txt"
+            android:text="协议代扣款"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/divider_one"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/pad_way_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_divider" />
+
+        <TextView
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_one"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/assemble_card_two"
+            android:textColor="@color/grey_middle_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_card_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/card_view"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/card_view"
+            android:textColor="@color/grey_deep_txt"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/aip_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/timing_modify_money_two"
+            android:textColor="@color/grey_middle_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_aip_money_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aip_money"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/aip_money"
+            android:textColor="@color/grey_deep_txt"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/aip_zhouqi_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aip_money"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/timing_modify_repeat"
+            android:textColor="@color/grey_middle_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/aip_zhouqi_view_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aip_zhouqi_view"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/aip_zhouqi_view"
+            android:textColor="@color/grey_deep_txt"
+            android:text="每月"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/aip_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aip_zhouqi_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/timing_modify_time_two"
+            android:textColor="@color/grey_middle_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_aip_day_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aip_day"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/aip_day"
+            android:textColor="@color/grey_deep_txt"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/divider_two"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/aip_day"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_divider" />
+
+        <TextView
+            android:id="@+id/aip_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_two"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/assemble_plan_text4"
+            android:textColor="@color/grey_middle_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_aip_state_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aip_state"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/aip_state"
+            android:textColor="@color/grey_deep_txt"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_aip_know"
+        android:gravity="center"
+        android:text="@string/zhi_dao_l"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

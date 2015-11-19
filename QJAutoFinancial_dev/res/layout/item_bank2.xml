@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cp_light_white"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dip"
+        android:src="@drawable/gongshang" />
+        
+    <LinearLayout
+    	android:layout_toRightOf="@+id/iv_image"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+    	android:layout_centerVertical="true"
+        android:orientation="vertical">
+        
+        <TextView
+	        android:id="@+id/tv_bank_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/black"
+	        android:textSize="20sp" />
+            
+        <TextView
+            android:id="@+id/tv_verify_mode" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/grey_middle_txt"/>
+            
+        <TextView
+            android:id="@+id/tv_cash_limit" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/grey_middle_txt"/>
+            
+    </LinearLayout>
+        
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/list_select" />
+
+</RelativeLayout>

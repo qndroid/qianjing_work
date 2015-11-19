@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.qianjing.finance.view.custom.VIPFreeScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/result_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="361dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <include
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="75dp"
+                        layout="@layout/activity_result_ok" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/result_fail"
+                    android:layout_width="match_parent"
+                    android:layout_height="164dp"
+                    android:background="@color/white" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/icon_redeem_fail" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/purchase_failed"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/viewLine"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <!-- @@@@@@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+                <LinearLayout
+                    android:id="@+id/ll_history_details_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_main"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="5dp"
+                        android:text="申购明细"
+                        android:textColor="#88000000"
+                        android:textSize="16dp" />
+
+                    <View style="@style/viewLine" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="基金名称"
+                            android:textColor="@color/grey_low_txt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_item2_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="申购金额(份)"
+                            android:textColor="@color/grey_low_txt"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_item3_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:text="状态"
+                            android:textColor="@color/grey_low_txt"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/viewLine"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp" />
+
+                    <View
+                        style="@style/viewLine"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+                <!-- @@@@@@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_why_fail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/why_fail" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="为什么失败?"
+                            android:textColor="@color/blue_deep"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dip" />
+            </LinearLayout>
+        </com.qianjing.finance.view.custom.VIPFreeScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_mend"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_gravity="bottom"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="68dip"
+                android:layout_weight="1"
+                android:background="@color/black" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mend_tips"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="68dip"
+                android:layout_weight="2"
+                android:background="@color/red" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mend"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

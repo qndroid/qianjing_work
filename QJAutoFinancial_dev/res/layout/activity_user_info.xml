@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置 我的账户 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View style="@style/viewLineTop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_account"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="姓名" />
+
+                    <TextView
+                        android:id="@+id/Account_name"
+                        style="@style/textNormalRight" />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_card"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="身份证" />
+
+                    <TextView
+                        android:id="@+id/Account_Identity"
+                        style="@style/textNormalRight" />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_us"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="手机号" />
+
+                    <TextView
+                        android:id="@+id/Account_mobile"
+                        style="@style/textNormalRight" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/viewLine"
+                android:layout_marginBottom="10dip" />
+
+            <LinearLayout
+                style="@style/linear"
+                android:background="@drawable/white" >
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_email"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="电子邮箱" />
+
+                    <ImageView
+                        android:id="@+id/iv_emailarrow"
+                        style="@style/imageRight"
+                        android:src="@drawable/img_right_arrow2" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        style="@style/textNormal"
+                        android:layout_toLeftOf="@id/iv_emailarrow"
+                        android:paddingRight="10dip"
+                        android:paddingLeft="0dip" />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_address"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="通讯地址" />
+
+                    <ImageView
+                        android:id="@+id/iv_addressarrow"
+                        style="@style/imageRight"
+                        android:src="@drawable/img_right_arrow2" />
+
+                    <TextView
+                        android:paddingLeft="70dip"
+                        android:maxLines="1"
+                        android:id="@+id/tv_address"
+                        style="@style/textNormal"
+                        android:layout_toLeftOf="@id/iv_addressarrow"
+                        android:paddingRight="10dip" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/white" >
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_marital_status"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="婚姻状况" />
+
+                    <ImageView
+                        android:id="@+id/iv_marital_statusarrow"
+                        style="@style/imageRight"
+                        android:src="@drawable/img_right_arrow2" />
+
+                    <TextView
+                        android:id="@+id/tv_marital_status"
+                        style="@style/textNormal"
+                        android:layout_toLeftOf="@id/iv_marital_statusarrow"
+                        android:paddingRight="10dip"
+                        android:paddingLeft="0dip" />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_education"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="学历" />
+
+                    <ImageView
+                        android:id="@+id/iv_educationarrow"
+                        style="@style/imageRight"
+                        android:src="@drawable/img_right_arrow2" />
+
+                    <TextView
+                        android:id="@+id/tv_education"
+                        style="@style/textNormal"
+                        android:layout_toLeftOf="@id/iv_educationarrow"
+                        android:paddingRight="10dip"
+                        android:paddingLeft="0dip" />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                 <RelativeLayout
+                    android:id="@+id/rl_job"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="职业" />
+
+                    <ImageView
+                        android:id="@+id/iv_jobarrow"
+                        style="@style/imageRight"
+                        android:src="@drawable/img_right_arrow2" />
+
+                    <TextView
+                        android:id="@+id/tv_job"
+                        style="@style/textNormal"
+                        android:layout_toLeftOf="@id/iv_jobarrow"
+                        android:paddingRight="10dip"
+                        android:paddingLeft="0dip" />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_experience"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="证券投资经验" />
+
+                    <ImageView
+                        android:id="@+id/iv_experiencearrow"
+                        style="@style/imageRight"
+                        android:src="@drawable/img_right_arrow2" />
+
+                    <TextView
+                        android:id="@+id/tv_experience"
+                        style="@style/textNormal"
+                        android:layout_toLeftOf="@id/iv_experiencearrow"
+                        android:paddingRight="10dip"
+                        android:paddingLeft="0dip" />
+                </RelativeLayout>
+                <View style="@style/viewLine" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_exit"
+                style="@style/btnNormal"
+                android:text="退出登录" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

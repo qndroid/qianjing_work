@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain"
+    android:background="#ac666666" >
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_main" 
+        android:paddingTop="20dip"
+        >
+
+        <Button
+            android:id="@+id/btn_edit_name"
+            style="@style/btnNormal"
+            android:text="修改名称" 
+            />
+
+        <Button
+            android:id="@+id/btn_edit_goal"
+            style="@style/btnNormal"
+            android:text="修改目标" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/btnNormal"
+            android:text="删除组合" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/btnNormalGray"
+            android:text="取消" />
+    </LinearLayout>
+
+</RelativeLayout>

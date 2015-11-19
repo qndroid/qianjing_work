@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain"
+    android:layout_width="match_parent"
+    android:background="@color/color_grey_light" >
+
+    <RelativeLayout
+        android:id="@+id/rl_history"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/assemble_bg"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_total_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="组合总资产"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_total_assets_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（ 元 ）"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="--.--"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_in_purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申购中（元）："
+                    android:textColor="@color/color_yellow"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_subscripting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--.--"
+                    android:textColor="@color/color_yellow"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/viewLine"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/cumulative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_total_profit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="累计盈亏"
+            android:textColor="@color/color_666666"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（元）："
+            android:textColor="@color/color_666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--.--"
+            android:textColor="@color/color_666666"
+            android:textSize="21dp" />
+    </LinearLayout>
+
+    <View
+        style="@style/viewLine"
+        android:background="@color/color_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_assets_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/tv_assemble_assets"
+            style="@style/assemble_list_switch"
+            android:background="@drawable/bg_holding_left"
+            android:text="@string/assmeble_list_assets"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_assemble_no_assets"
+            style="@style/assemble_list_switch"
+            android:background="@drawable/bg_holding_right"
+            android:text="@string/assmeble_list_no_assets"
+            android:textColor="@color/color_5a6572" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/balance_list_enter"
+        android:visibility="gone" />
+
+</LinearLayout>

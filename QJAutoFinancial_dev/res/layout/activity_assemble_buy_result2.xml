@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+    
+    <com.qianjing.finance.view.custom.VIPFreeScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none">
+   
+   
+   <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    
+    
+    <LinearLayout
+            style="@style/tableRow"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:id="@+id/iv_leftimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/purchase_success" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginLeft="5dp"
+                android:text="您的申购已受理！"
+                android:textColor="@color/red" />
+    </LinearLayout>
+    
+   
+
+
+    <TextView
+        android:id="@+id/tv_statetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="#99000000"
+        android:text="显示内容" />
+
+    <LinearLayout
+        android:id="@+id/ll_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/result_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dip"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/tv_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginTop="13dip"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/tv_info3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="7dip"
+                android:gravity="bottom"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_monenycard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:visibility="gone"/>
+    
+    <View 
+        style="@style/viewLine"
+        android:layout_height="0.1dp"/>
+    
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/grey_metal">
+			
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="基金名称"
+                android:layout_centerVertical="true"
+                android:textColor="#99000000"
+                android:textSize="18sp" />
+			
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="状态"
+                android:textColor="#99000000"
+                android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <View 
+        style="@style/viewLine"
+        android:layout_height="0.1dp"/>
+    
+        <ListView
+            android:divider="@null"
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="visible">
+        </ListView>
+
+    <Button
+         android:id="@+id/btn_confirm"
+         style="@style/btnNormal"
+         android:text="确定" />
+     
+     <RelativeLayout
+         android:layout_height="60dp"
+         android:layout_marginTop="30dp"
+         android:layout_width="match_parent">
+         
+         <LinearLayout
+             android:id="@+id/ll_why_fail"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_centerInParent="true"
+             android:orientation="horizontal">
+             
+             <ImageView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:src="@drawable/why_fail"/>
+             
+             <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="15sp"
+                 android:textColor="@color/blue_deep"
+                 android:text="为什么失败?"/>
+             
+         </LinearLayout>
+         
+     </RelativeLayout>
+    </LinearLayout>
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+</LinearLayout>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/layoutMain">
+    
+    <include 
+        layout="@layout/include_title"/>
+
+    <com.qianjing.finance.view.custom.VIPFreeScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none">
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+       
+       <!--@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@ -->     
+        
+        <RelativeLayout 
+            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            android:background="#bfc5ce">
+            
+            <TextView
+            android:id="@+id/tv_balance_title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="梦想基金组合-0627"
+            android:textColor="#88000000"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"/>
+            
+            
+        </RelativeLayout>
+        
+    <RelativeLayout 
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@color/white">
+            
+     <LinearLayout
+        android:id="@+id/ll_assets_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_real_trade"
+            style="@style/assetsTitleBar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:gravity="center"
+            android:background="@drawable/btn_details_selector_left"
+            android:text="调整前持仓"
+            android:textColor="@color/white"/>
+		
+        <TextView
+            android:id="@+id/tv_virtual_trade"
+            style="@style/assetsTitleBar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:gravity="center"
+            android:background="@drawable/btn_details_selector_right"
+            android:text="调整后预期持仓"
+            android:textColor="@color/white"/>
+    		</LinearLayout>
+    	
+        </RelativeLayout>
+        
+    
+     <!--@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@ -->   
+    	<LinearLayout
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="wrap_content"
+    	    android:orientation="vertical"
+    	    android:background="@color/white">
+    	    
+    	<View 
+            style="@style/viewLine"/>
+        
+        <LinearLayout
+            android:layout_height="34dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+        		android:textSize="14sp"
+        		android:layout_gravity="center_vertical"
+        		android:textColor="@color/grey_low_txt"
+                android:text="基金名称"/>
+            
+            <TextView
+                android:id="@+id/tv_item2_title" 
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+        		android:textSize="14sp"
+        		android:layout_gravity="center_vertical"
+        		android:textColor="@color/grey_low_txt"
+                android:text="市值占比"/>
+            
+            <TextView
+                android:id="@+id/tv_item3_title"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="right"
+        		android:textSize="14sp"
+        		android:layout_gravity="center_vertical"
+        		android:textColor="@color/grey_low_txt"
+                android:text="持仓份额"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+    	    android:id="@+id/ll_balance_content"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"></LinearLayout>
+    	    
+    	</LinearLayout>
+    	
+    	 <!--@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@ -->   
+    	
+    	<View 
+            style="@style/viewLine"/>
+    	
+    	<LinearLayout 
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="match_parent"
+    	    android:orientation="vertical"
+    	    android:background="@color/white">
+    	    
+    	    <TextView 
+    	        android:layout_height="33dp"
+    	        android:layout_width="match_parent"
+    	        android:text="本次调整原因"
+    	        android:textSize="17sp"
+    	        android:textStyle="bold"
+    	        android:gravity="center_vertical"
+    	        android:paddingLeft="12dp"
+    	        android:paddingRight="0dp"
+    	        android:textColor="@color/blue_deep_grey"/>
+    	    
+    	    <ImageView 
+        		android:layout_height="wrap_content"
+        		android:layout_width="match_parent"
+        		android:layout_alignParentTop="true"
+        		android:background="@drawable/bitmap_dot_line"/>
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_balance_reason"
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="match_parent"
+    	        android:padding="12dp"
+    	        android:textColor="@color/grey_middle_txt"
+    	        android:textSize="15sp"
+    	        android:lineSpacingExtra="5dp"
+    	        android:text="三季度调整，银华多利宝表现抢眼。三季度调整，银华多利宝表现抢眼。三季度调整，银华多利宝表现抢眼。"/>
+    	    
+    	    <View 
+            	style="@style/viewLine"/>
+    	    
+    	</LinearLayout>
+    	
+    	 <!--@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@ -->   
+    	
+    	<View 
+    	    android:layout_height="20dp"
+    	    android:layout_width="match_parent"/>
+    	
+    	<LinearLayout 
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="match_parent"
+    	    android:orientation="vertical"
+    	    android:background="@color/white">
+    	
+    		<View
+            	style="@style/viewLine"/>
+    		
+    		<RelativeLayout 
+    		    android:layout_height="33dp"
+    		    android:layout_width="match_parent">
+    		
+    		<LinearLayout 
+    		    android:layout_height="wrap_content"
+    		    android:layout_width="match_parent"
+    		    android:layout_centerVertical="true"
+    		    android:orientation="horizontal">
+    		
+    	    <TextView
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:text="调整详情"
+    	        android:textSize="17sp"
+    	        android:textStyle="bold"
+    	        android:layout_marginLeft="12dp"
+    	        android:textColor="@color/blue_deep_grey"/>
+    		
+    	    <TextView
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:layout_marginLeft="5dp"
+    	        android:textSize="12sp"
+    	        android:textColor="@color/blue_deep_grey"
+    	        android:text="依据再平衡前后市值相等的原则进行调整"/>
+    	    
+    	    </LinearLayout>
+    	    
+    		</RelativeLayout>
+    		
+    		 <!--@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@ -->   
+    		
+    		<View
+            	style="@style/viewLine"/>
+    	
+    		<LinearLayout 
+    		    android:layout_height="wrap_content"
+    		    android:layout_width="match_parent"
+    		    android:orientation="vertical">
+    		
+			    	<LinearLayout
+			            android:layout_height="34dp"
+			            android:layout_width="match_parent"
+			            android:layout_marginLeft="12dp"
+			            android:layout_marginRight="12dp"
+			            android:orientation="horizontal">
+			            
+			            <TextView 
+			                android:layout_height="wrap_content"
+			                android:layout_width="0dp"
+			                android:layout_weight="3"
+			        		android:textSize="14sp"
+			        		android:layout_gravity="center_vertical"
+			        		android:textColor="@color/grey_low_txt"
+			                android:text="操作"/>
+			            
+			            <TextView
+			                android:layout_height="wrap_content"
+			                android:layout_width="0dp"
+			                android:layout_weight="5"
+			        		android:textSize="14sp"
+			        		android:layout_gravity="center_vertical"
+			        		android:textColor="@color/grey_low_txt"
+			                android:text="基金名称"/>
+			            
+			            <TextView
+			                android:layout_height="wrap_content"
+			                android:layout_width="0dp"
+			                android:layout_weight="3"
+			                android:gravity="right"
+			        		android:textSize="14sp"
+			        		android:layout_gravity="center_vertical"
+			        		android:textColor="@color/grey_low_txt"
+			                android:text="份额/金额"/>
+			            
+			        </LinearLayout>
+			        
+			    	<LinearLayout
+			    	    android:id="@+id/ll_balance_opt"
+			    	    android:layout_height="wrap_content"
+			    	    android:layout_width="match_parent"
+			    	    android:orientation="vertical"/>
+			        
+    		</LinearLayout>
+    		
+    		<!--@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@ -->
+    		
+    		<View
+            	style="@style/viewLine"/>
+    		
+    		<LinearLayout 
+    		    android:layout_height="33dp"
+    		    android:layout_width="match_parent"
+    		    android:orientation="horizontal">
+    		
+    	    <TextView
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:text="@string/service_fee"
+    	        android:textSize="15sp"
+    	        android:layout_gravity="center_vertical"
+    	        android:layout_marginLeft="12dp"
+    	        android:textColor="@color/blue_deep_grey"/>
+    		
+    	    <TextView
+    	        android:id="@+id/tv_balance_fee"
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:layout_marginLeft="5dp"
+    	        android:layout_gravity="center_vertical"
+    	        android:textSize="15sp"
+    	        android:textStyle="bold"
+    	        android:textColor="@color/blue_deep_grey"
+    	        android:text="23.00"/>
+    	    
+    	    <TextView
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:text="元"
+    	        android:textSize="15sp"
+    	        android:layout_gravity="center_vertical"
+    	        android:textColor="@color/blue_deep_grey"/>
+    	    
+    	    </LinearLayout>
+    	    
+    		<View
+            	style="@style/viewLine"/>
+    		
+    	</LinearLayout>
+    	
+    	
+    	 <!--@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@ -->   
+    	
+    	<LinearLayout 
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="wrap_content"
+    	    android:orientation="horizontal"
+    	    android:layout_marginTop="25dp"
+    	    android:layout_gravity="center_horizontal">
+    	    
+    	    <CheckBox
+    	        android:id="@+id/cb_agreement"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        style="@style/CustomCheckboxTheme"/>
+    	    
+    	    <TextView 
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:textColor="@color/grey_middle_txt"
+    	        android:text="已阅读并同意"/>
+    	    
+    	    <TextView
+    	        android:id="@+id/tv_agreement"
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:clickable="true"
+    	        android:textColor="@color/blue_deep"
+    	        android:text="@string/rebalance_service"/>
+    	    
+    	</LinearLayout>
+    	
+    	<Button
+    	    android:id="@+id/btn_agree"
+    	    style="@style/btnNormal"
+    	    android:layout_width="212dp"
+    	    android:text="同意"/>
+    
+    	<LinearLayout 
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="wrap_content"
+    	    android:orientation="horizontal"
+    	    android:layout_marginTop="35dp"
+    	    android:layout_gravity="center_horizontal">
+    	    
+    	    <ImageView 
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:src="@drawable/fund_logo"/>
+    	    
+    	    <TextView
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="wrap_content"
+    	        android:textColor="@color/grey_middle_txt"
+    	        android:text="@string/qianjingdesheng"/>
+    	    
+    	</LinearLayout>
+      </LinearLayout>
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+    
+</LinearLayout>

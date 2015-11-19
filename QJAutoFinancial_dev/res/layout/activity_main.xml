@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/viewLine"
+                android:layout_gravity="top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/radio_button_height"
+                android:background="@drawable/main_tab_back"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/rg_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_recommand"
+                        style="@style/main_tab"
+                        android:drawableTop="@drawable/radiobutton_recommand_selector"
+                        android:text="@string/rb_recommane_name" />
+
+                    <RadioButton
+                        android:id="@+id/rb_quick_buy"
+                        style="@style/main_tab"
+                        android:drawableTop="@drawable/radiobutton_find_selector"
+                        android:text="@string/all_invest" />
+
+                    <RadioButton
+                        android:id="@+id/rb_assets"
+                        style="@style/main_tab"
+                        android:drawableTop="@drawable/radiobutton_assets_selector"
+                        android:text="@string/wo_de_zi_chan" />
+
+                    <RadioButton
+                        android:id="@+id/rb_account"
+                        style="@style/main_tab"
+                        android:drawableTop="@drawable/radiobutton_set_selector"
+                        android:text="@string/zhang_hu_she_zhi" />
+
+                    <RadioGroup>
+                    </RadioGroup>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

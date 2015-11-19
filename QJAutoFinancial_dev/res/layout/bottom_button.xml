@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/white" >
+    
+   	<Button
+          android:id="@+id/btn_invest_virtual"
+          android:layout_height="match_parent"
+          android:background="@drawable/btn_invest_virtual_bg"
+          android:layout_margin="10dp"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:textSize="16sp"
+          android:textColor="#99000000"
+          android:text="@string/btn_buy_virtual" />
+        
+    <Button
+          android:id="@+id/btn_invest"
+          android:layout_height="match_parent"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_margin="10dp"
+          android:textColor="#ffffff"
+          android:textSize="16sp"
+          android:background="@drawable/btn_invest_bg"
+          android:text="@string/btn_buy" />
+    
+    
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/first_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_all_success" />
+
+    <ImageView
+        android:id="@+id/second_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_part"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/icon_day_one" />
+
+    <ImageView
+        android:id="@+id/third_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_part"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/icon_day_two" />
+
+    <TextView
+        android:id="@+id/opreate_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/first_part"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@id/first_part"
+        android:text="@string/take_money_success"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/commit_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/opreate_title_view"
+        android:layout_below="@id/opreate_title_view"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/grey_middle_txt"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/bank_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/opreate_title_view"
+        android:layout_below="@id/commit_time_view"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/grey_middle_txt"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/deduct_money_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/opreate_title_view"
+        android:layout_below="@id/bank_name_view"
+        android:layout_marginTop="2.5dp"
+        android:textColor="@color/grey_middle_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/deduct_money_value_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/deduct_money_view"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/deduct_money_view"
+        android:textColor="@color/grey_middle_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fee_money_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/opreate_title_view"
+        android:layout_below="@id/deduct_money_value_view"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/grey_middle_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fee_money_value_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/fee_money_view"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/fee_money_view"
+        android:textColor="@color/grey_middle_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/confirm_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/opreate_title_view"
+        android:layout_alignTop="@id/second_part"
+        android:layout_toRightOf="@id/second_part"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/confirm_time_value_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/confirm_time_view"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/confirm_time_view"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/confirm_time_msg_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/opreate_title_view"
+        android:layout_below="@id/confirm_time_value_view"
+        android:drawableRight="@drawable/icon_message"
+        android:gravity="center_vertical"
+        android:textColor="@color/grey_middle_txt"
+        android:textSize="14sp" />
+    
+    <ImageView
+        android:id="@+id/confirm_time_msg_view_icon"
+        android:layout_toRightOf="@+id/confirm_time_msg_view"
+        android:layout_below="@id/confirm_time_value_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/msg_icon"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/final_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/opreate_title_view"
+        android:layout_alignTop="@id/third_part"
+        android:layout_toRightOf="@id/third_part"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/final_time_value_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/final_time_view"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/final_time_view"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/final_time_msg_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/opreate_title_view"
+        android:layout_below="@id/final_time_value_view"
+        android:drawableRight="@drawable/icon_message"
+        android:gravity="center_vertical"
+        android:textColor="@color/grey_middle_txt"
+        android:textSize="14sp" />
+    
+    <ImageView
+        android:id="@+id/final_time_msg_view_icon"
+        android:layout_toRightOf="@+id/final_time_msg_view"
+        android:layout_below="@id/final_time_value_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/msg_icon"
+        android:visibility="gone"/>
+    
+
+</RelativeLayout>

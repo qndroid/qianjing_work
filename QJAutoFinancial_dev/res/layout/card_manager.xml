@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 绑卡 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:id="@+id/title_middle_text"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的银行卡"
+            android:textColor="@drawable/title_text_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_back"
+            style="@style/imageNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/title_left_but"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="3dip"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@null"
+        android:divider="@drawable/line_gray"
+        android:dividerHeight="0.5dip" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_newbound"
+        style="@style/btnNormal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="新建绑卡" />
+
+</LinearLayout>

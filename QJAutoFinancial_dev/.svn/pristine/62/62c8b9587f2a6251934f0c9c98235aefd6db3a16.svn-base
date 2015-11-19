@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/include_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        
+      <com.qianjing.finance.view.custom.FloatScrollView
+        android:id="@+id/fsv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:scrollbars="none" >
+        
+
+        <LinearLayout
+            android:id="@+id/ll_fsv_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_profit"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_profit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/tv_profit_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="#77ffffff" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv_risk_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/iv_risk_explain"
+                            android:layout_toRightOf="@+id/tv_risk_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/icon_warning" />
+
+                        <View
+                            style="@style/viewVertical"
+                            android:layout_height="15dp"
+                            android:background="@color/white"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_min_purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+			
+            <com.qianjing.finance.view.slidingtabstrip.PagerSlidingTabStrip
+                android:id="@+id/psts_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_pager"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:background="@color/white" />
+        </LinearLayout>
+        </com.qianjing.finance.view.custom.FloatScrollView>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffffff"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+			
+            <TextView
+                android:id="@+id/xu_ni_buy_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/xu_ni_shi_tou_bg"
+                android:gravity="center"
+                android:text="@string/xu_ni_tou_zi"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp"
+                android:visibility="gone" />
+			
+            <TextView
+                android:id="@+id/start_buy_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/kai_shi_tou_zi_bg"
+                android:gravity="center"
+                android:text="@string/kai_shi_tou_zi"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

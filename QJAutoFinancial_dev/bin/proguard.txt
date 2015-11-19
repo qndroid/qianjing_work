@@ -1,0 +1,606 @@
+# view res/layout/activity_assemble_asset_list.xml #generated:61
+# view res/layout/activity_assemble_config_2_1.xml #generated:235
+# view res/layout/activity_custom_details_2_1.xml #generated:115
+# view res/layout/activity_fund.xml #generated:26
+# view res/layout/activity_quick_buy_detail_layout_2_1.xml #generated:104
+# view res/layout/activity_time_desposit_detail.xml #generated:47
+# view res/layout/ad_cycle_view.xml #generated:6
+# view res/layout/fina_new_guide_activity.xml #generated:13
+# view res/layout/guide.xml #generated:7
+# view res/layout/guide_activity.xml #generated:7
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/activity_myasset_3_0.xml #generated:17
+# view res/layout/activity_quick_new_layout.xml #generated:8
+# view res/layout/fragment_recommand_ayout.xml #generated:8
+# view res/layout/fragment_virtual_assets.xml #generated:13
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:643
+-keep class cn.jpush.android.service.AlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:621
+-keep class cn.jpush.android.service.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:608
+-keep class cn.jpush.android.service.PushService { <init>(...); }
+
+# view res/layout/activity_assemble_detail_2_1.xml #generated:286
+# view res/layout/activity_myasset_3_0.xml #generated:58
+-keep class com.github.mikephil.charting.charts.LineChart { <init>(...); }
+
+# view AndroidManifest.xml #generated:407
+-keep class com.hxcr.chinapay.activity.HelpMain { <init>(...); }
+
+# view AndroidManifest.xml #generated:395
+-keep class com.hxcr.chinapay.activity.InfoMain { <init>(...); }
+
+# view AndroidManifest.xml #generated:389
+-keep class com.hxcr.chinapay.activity.Initialize { <init>(...); }
+
+# view AndroidManifest.xml #generated:401
+-keep class com.hxcr.chinapay.activity.ResultInfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:419
+-keep class com.hxcr.chinapay.activity.SubmitSujestion { <init>(...); }
+
+# view AndroidManifest.xml #generated:413
+-keep class com.hxcr.chinapay.activity.SustainBankList { <init>(...); }
+
+# view res/layout/activity_ad_cycle.xml #generated:6
+-keep class com.minking.imagecycleview.ImageCycleView { <init>(...); }
+
+# view AndroidManifest.xml #generated:578
+-keep class com.qianjing.finance.receiver.HandleReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:590
+-keep class com.qianjing.finance.receiver.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:603
+-keep class com.qianjing.finance.service.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:604
+-keep class com.qianjing.finance.service.UpdateFundService { <init>(...); }
+
+# view AndroidManifest.xml #generated:605
+-keep class com.qianjing.finance.service.update.UpdateService { <init>(...); }
+
+# view AndroidManifest.xml #generated:11
+-keep class com.qianjing.finance.ui.QApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:337
+-keep class com.qianjing.finance.ui.activity.account.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:347
+-keep class com.qianjing.finance.ui.activity.account.AccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:382
+-keep class com.qianjing.finance.ui.activity.account.AccountDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:367
+-keep class com.qianjing.finance.ui.activity.account.AgreementActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:362
+-keep class com.qianjing.finance.ui.activity.account.CompanyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:342
+-keep class com.qianjing.finance.ui.activity.account.PassActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:357
+-keep class com.qianjing.finance.ui.activity.account.PassResetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:352
+-keep class com.qianjing.finance.ui.activity.account.PassWordManagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:332
+-keep class com.qianjing.finance.ui.activity.account.UserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:377
+-keep class com.qianjing.finance.ui.activity.account.UserfeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:372
+-keep class com.qianjing.finance.ui.activity.account.VersionDescriptionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:254
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleAIPConfigActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:278
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleBuyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:284
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleBuyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleBuyResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:259
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleConfigActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:271
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:289
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleMendDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:668
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleMineActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:265
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleModifyNameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:816
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleSteadyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleTradeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:178
+-keep class com.qianjing.finance.ui.activity.assemble.AssembleTradeListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class com.qianjing.finance.ui.activity.assemble.aip.AssembleAIPBuyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.qianjing.finance.ui.activity.assemble.aip.AssembleAIPBuyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.qianjing.finance.ui.activity.assemble.aip.AssembleAIPBuyResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.qianjing.finance.ui.activity.assemble.aip.chargedetail.AIPChargeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.qianjing.finance.ui.activity.assemble.aip.chargedetail.AIPFundChargeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.qianjing.finance.ui.activity.assemble.aip.modify.AssembleAIPDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.qianjing.finance.ui.activity.assemble.aip.modify.AssembleAIPModifyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.qianjing.finance.ui.activity.assemble.aip.modify.AssembleAIPModifyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.qianjing.finance.ui.activity.assemble.aip.modify.AssembleAIPModifyResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.qianjing.finance.ui.activity.assemble.asset.AssembleAssetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.qianjing.finance.ui.activity.assemble.asset.AssembleAssetListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.qianjing.finance.ui.activity.assemble.asset.VirtualAssetListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:673
+-keep class com.qianjing.finance.ui.activity.assemble.profit.AssembelDayProfitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:677
+-keep class com.qianjing.finance.ui.activity.assemble.profit.AssembleDayProfitDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:682
+-keep class com.qianjing.finance.ui.activity.assemble.quickbuy.QuickAssembleBuyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:687
+-keep class com.qianjing.finance.ui.activity.assemble.quickbuy.QuickBuyConfirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:692
+-keep class com.qianjing.finance.ui.activity.assemble.quickbuy.QuickBuyResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:566
+-keep class com.qianjing.finance.ui.activity.assemble.quickbuy.QuickFundDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.qianjing.finance.ui.activity.assemble.recommand.RecommandDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.qianjing.finance.ui.activity.assemble.recommand.RecommandFundDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.qianjing.finance.ui.activity.assemble.recommand.RecommandRedeemActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.qianjing.finance.ui.activity.assemble.recommand.RecommandRedeemResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:299
+-keep class com.qianjing.finance.ui.activity.assemble.redeem.AssembleRedeemConfirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:295
+-keep class com.qianjing.finance.ui.activity.assemble.redeem.AssembleRedeemDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:304
+-keep class com.qianjing.finance.ui.activity.assemble.redeem.AssembleRedeemResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:230
+-keep class com.qianjing.finance.ui.activity.assemble.type.AssembleChildrenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:248
+-keep class com.qianjing.finance.ui.activity.assemble.type.AssembleDreamActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:236
+-keep class com.qianjing.finance.ui.activity.assemble.type.AssembleHouseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:218
+-keep class com.qianjing.finance.ui.activity.assemble.type.AssembleInvestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:242
+-keep class com.qianjing.finance.ui.activity.assemble.type.AssembleMarryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:224
+-keep class com.qianjing.finance.ui.activity.assemble.type.AssemblePensionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:310
+-keep class com.qianjing.finance.ui.activity.card.CardBoundOneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:315
+-keep class com.qianjing.finance.ui.activity.card.CardBoundThreeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:320
+-keep class com.qianjing.finance.ui.activity.card.CardBoundTwoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:325
+-keep class com.qianjing.finance.ui.activity.card.CardManagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:496
+-keep class com.qianjing.finance.ui.activity.card.QuickBillActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:509
+-keep class com.qianjing.finance.ui.activity.card.QuickBillBankActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:502
+-keep class com.qianjing.finance.ui.activity.card.QuickBillVerifyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:173
+-keep class com.qianjing.finance.ui.activity.common.AdsContentsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class com.qianjing.finance.ui.activity.common.AssembleIntroduceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:734
+-keep class com.qianjing.finance.ui.activity.common.DealWithSchema { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.qianjing.finance.ui.activity.common.EnterModeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:135
+-keep class com.qianjing.finance.ui.activity.common.GestureLockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class com.qianjing.finance.ui.activity.common.GuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:204
+-keep class com.qianjing.finance.ui.activity.common.InformActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:210
+-keep class com.qianjing.finance.ui.activity.common.InformDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:156
+-keep class com.qianjing.finance.ui.activity.common.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class com.qianjing.finance.ui.activity.common.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:193
+-keep class com.qianjing.finance.ui.activity.common.P2PWebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:198
+-keep class com.qianjing.finance.ui.activity.common.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:151
+-keep class com.qianjing.finance.ui.activity.common.SetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class com.qianjing.finance.ui.activity.common.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:188
+-keep class com.qianjing.finance.ui.activity.common.WebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:740
+-keep class com.qianjing.finance.ui.activity.custom.CustomDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:571
+-keep class com.qianjing.finance.ui.activity.custom.VIPCustomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:551
+-keep class com.qianjing.finance.ui.activity.fund.CardListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:526
+-keep class com.qianjing.finance.ui.activity.fund.RewardListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class com.qianjing.finance.ui.activity.fund.asset.FundAssetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.qianjing.finance.ui.activity.fund.asset.FundAssetListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:531
+-keep class com.qianjing.finance.ui.activity.fund.asset.FundMineHoldingDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:541
+-keep class com.qianjing.finance.ui.activity.fund.buy.FundBuyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:536
+-keep class com.qianjing.finance.ui.activity.fund.buy.FundDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:556
+-keep class com.qianjing.finance.ui.activity.fund.buy.FundResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:546
+-keep class com.qianjing.finance.ui.activity.fund.buy.PurchaseDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:561
+-keep class com.qianjing.finance.ui.activity.fund.redeem.FundRedeemConfirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:516
+-keep class com.qianjing.finance.ui.activity.fund.search.FundActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:521
+-keep class com.qianjing.finance.ui.activity.fund.search.FundSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:751
+-keep class com.qianjing.finance.ui.activity.history.AllTradeHistory { <init>(...); }
+
+# view AndroidManifest.xml #generated:767
+-keep class com.qianjing.finance.ui.activity.history.AssembleHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:782
+-keep class com.qianjing.finance.ui.activity.history.AssembleHistoryDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:746
+-keep class com.qianjing.finance.ui.activity.history.BaseHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:772
+-keep class com.qianjing.finance.ui.activity.history.FundHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:787
+-keep class com.qianjing.finance.ui.activity.history.FundHistoryDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:810
+-keep class com.qianjing.finance.ui.activity.history.P2pHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:756
+-keep class com.qianjing.finance.ui.activity.history.SteadyHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:804
+-keep class com.qianjing.finance.ui.activity.history.SteadyHistoryDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:777
+-keep class com.qianjing.finance.ui.activity.history.WalletHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:792
+-keep class com.qianjing.finance.ui.activity.history.WalletHistoryDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:762
+-keep class com.qianjing.finance.ui.activity.profit.ProfitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:798
+-keep class com.qianjing.finance.ui.activity.profit.SteadyProfitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:708
+-keep class com.qianjing.finance.ui.activity.purchase.PurchaseBuyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:713
+-keep class com.qianjing.finance.ui.activity.purchase.PurchaseConfirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:718
+-keep class com.qianjing.finance.ui.activity.purchase.PurchaseResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:723
+-keep class com.qianjing.finance.ui.activity.purchase.PurchaseVirtualResult { <init>(...); }
+
+# view AndroidManifest.xml #generated:464
+-keep class com.qianjing.finance.ui.activity.rebalance.RebalanceAboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:451
+-keep class com.qianjing.finance.ui.activity.rebalance.RebalanceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:489
+-keep class com.qianjing.finance.ui.activity.rebalance.RebalanceHistoryDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:482
+-keep class com.qianjing.finance.ui.activity.rebalance.RebalanceHoldingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:457
+-keep class com.qianjing.finance.ui.activity.rebalance.RebalanceListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:470
+-keep class com.qianjing.finance.ui.activity.rebalance.RebalanceReasonActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:476
+-keep class com.qianjing.finance.ui.activity.rebalance.RebalanceResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.qianjing.finance.ui.activity.timedeposit.TimeDepositAssetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.qianjing.finance.ui.activity.timedeposit.TimeDepositDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.qianjing.finance.ui.activity.timedeposit.TimeDepositProfitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:728
+-keep class com.qianjing.finance.ui.activity.virtual.HoldingDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:702
+-keep class com.qianjing.finance.ui.activity.virtual.VirtualBuyDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:697
+-keep class com.qianjing.finance.ui.activity.virtual.VirtualSchemaDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:661
+-keep class com.qianjing.finance.ui.activity.virtual.VirtualTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:427
+-keep class com.qianjing.finance.ui.activity.wallet.WalletActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:439
+-keep class com.qianjing.finance.ui.activity.wallet.WalletCashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:445
+-keep class com.qianjing.finance.ui.activity.wallet.WalletProfitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:433
+-keep class com.qianjing.finance.ui.activity.wallet.WalletRechargeActivity { <init>(...); }
+
+# view res/layout/dialog_hint_loading.xml #generated:18
+# view res/layout/dialog_loading.xml #generated:9
+-keep class com.qianjing.finance.view.CircularProgressBar { <init>(...); }
+
+# view res/layout/activity_web_p2p.xml #generated:14
+-keep class com.qianjing.finance.view.CommonWebView { <init>(...); }
+
+# view res/layout/gesture_lock.xml #generated:7
+-keep class com.qianjing.finance.view.LockView { <init>(...); }
+
+# view res/layout/activity_quick_new_layout.xml #generated:542
+-keep class com.qianjing.finance.view.RotateTextView { <init>(...); }
+
+# view res/layout/activity_myasset_3_0.xml #generated:54
+-keep class com.qianjing.finance.view.chartview.ChartBackground { <init>(...); }
+
+# view res/layout/activity_assemble_config.xml #generated:40
+# view res/layout/activity_assemble_detail.xml #generated:207
+# view res/layout/activity_quick_buy_detail_layout.xml #generated:40
+# view res/layout/activity_recommand_detail.xml #generated:157
+# view res/layout/fragment_config.xml #generated:14
+# view res/layout/fund_detail_view.xml #generated:38
+-keep class com.qianjing.finance.view.chartview.PieGraph { <init>(...); }
+
+# view res/layout/activity_assemble_detail.xml #generated:14
+# view res/layout/activity_assemble_detail_2_1.xml #generated:15
+-keep class com.qianjing.finance.view.custom.AnimLScrollView { <init>(...); }
+
+# view res/layout/activity_vip_custom.xml #generated:70
+-keep class com.qianjing.finance.view.custom.CtrlViewPager { <init>(...); }
+
+# view res/layout/include_title.xml #generated:28
+-keep class com.qianjing.finance.view.custom.DynamicButton { <init>(...); }
+
+# view res/layout/activity_assemble_config_2_1.xml #generated:13
+# view res/layout/activity_custom_details_2_1.xml #generated:13
+# view res/layout/activity_quick_buy_detail_layout_2_1.xml #generated:14
+-keep class com.qianjing.finance.view.custom.FloatScrollView { <init>(...); }
+
+# view res/layout/popupow_history_layout.xml #generated:22
+# view res/layout/popupow_history_layout.xml #generated:35
+# view res/layout/popupow_history_layout.xml #generated:50
+# view res/layout/popupow_history_layout.xml #generated:9
+-keep class com.qianjing.finance.view.custom.HistoryPopupowItem { <init>(...); }
+
+# view res/layout/activity_account_2.xml #generated:12
+# view res/layout/activity_assemble_aip_buy.xml #generated:8
+# view res/layout/activity_assemble_aip_buy_detail.xml #generated:8
+# view res/layout/activity_assemble_aip_buy_result.xml #generated:8
+# view res/layout/activity_assemble_aip_detail.xml #generated:11
+# view res/layout/activity_assemble_aip_modify_detail.xml #generated:11
+# view res/layout/activity_assemble_buy_detail.xml #generated:7
+# view res/layout/activity_assemble_buy_result.xml #generated:11
+# view res/layout/activity_assemble_buy_result2.xml #generated:7
+# view res/layout/activity_assemble_redeem_detail_new_layout.xml #generated:12
+# view res/layout/activity_custom_details.xml #generated:10
+# view res/layout/activity_find.xml #generated:8
+# view res/layout/activity_history_assemable_details.xml #generated:11
+# view res/layout/activity_history_fund_details.xml #generated:12
+# view res/layout/activity_history_rebalance_details.xml #generated:12
+# view res/layout/activity_history_wallet_details.xml #generated:12
+# view res/layout/activity_purchase_layout.xml #generated:10
+# view res/layout/activity_quick_buy_detail_layout.xml #generated:11
+# view res/layout/activity_rebalance.xml #generated:9
+# view res/layout/activity_rebalance_holding.xml #generated:9
+# view res/layout/activity_rebalance_result.xml #generated:11
+# view res/layout/activity_recommand_detail.xml #generated:11
+# view res/layout/activity_virtual_buy_detail.xml #generated:9
+# view res/layout/activity_virtual_schema_details.xml #generated:8
+# view res/layout/fragment_ask_age.xml #generated:2
+# view res/layout/fragment_ask_earning.xml #generated:2
+# view res/layout/fragment_ask_enable_assets.xml #generated:2
+# view res/layout/fragment_ask_invest_type.xml #generated:2
+# view res/layout/fragment_ask_lose_action.xml #generated:2
+-keep class com.qianjing.finance.view.custom.VIPFreeScrollView { <init>(...); }
+
+# view res/layout/activity_assemble_aip_modify.xml #generated:29
+# view res/layout/activity_assemble_redeem_confirm_new_layout.xml #generated:29
+# view res/layout/activity_assemble_redeem_confirm_new_layout.xml #generated:41
+# view res/layout/activity_recommand_redeem.xml #generated:105
+# view res/layout/activity_search_fund_layout.xml #generated:71
+-keep class com.qianjing.finance.view.indictorview.CenterTextView { <init>(...); }
+
+# view res/layout/activity_assemble_config.xml #generated:23
+# view res/layout/activity_assemble_detail.xml #generated:190
+# view res/layout/activity_custom_details_2_1.xml #generated:31
+# view res/layout/activity_quick_buy_detail_layout.xml #generated:22
+# view res/layout/fund_detail_view.xml #generated:12
+-keep class com.qianjing.finance.view.indictorview.IndiactorView { <init>(...); }
+
+# view res/layout/fragment_config.xml #generated:52
+-keep class com.qianjing.finance.view.listview.AnimatedExpandableListView { <init>(...); }
+
+# view res/layout/activity_wallet_new.xml #generated:68
+-keep class com.qianjing.finance.view.runnabletextview.RunningTextView { <init>(...); }
+
+# view res/layout/fragment_config.xml #generated:2
+-keep class com.qianjing.finance.view.scrollview.InnerScrollView { <init>(...); }
+
+# view res/layout/activity_quick_new_layout.xml #generated:13
+-keep class com.qianjing.finance.view.scrollview.ListenerScrollView { <init>(...); }
+
+# view res/layout/activity_assemble_config_2_1.xml #generated:229
+# view res/layout/activity_custom_details_2_1.xml #generated:109
+# view res/layout/activity_fund.xml #generated:8
+# view res/layout/activity_quick_buy_detail_layout_2_1.xml #generated:98
+# view res/layout/include_pager_sliding_tabstrip.xml #generated:6
+-keep class com.qianjing.finance.view.slidingtabstrip.PagerSlidingTabStrip { <init>(...); }
+
+# view res/layout/activity_assemble_asset_list.xml #generated:40
+# view res/layout/activity_time_desposit_detail.xml #generated:40
+-keep class com.qianjing.finance.view.slidingtabstrip.UnderlinePageIndicator { <init>(...); }
+
+# view res/layout/activity_virtual_holding_details.xml #generated:9
+# view res/layout/myasset_trade_detail.xml #generated:106
+-keep class com.qianjing.finance.view.virtual.CustomDetailsView { <init>(...); }
+
+# view res/layout/activity_custom_details.xml #generated:21
+# view res/layout/activity_virtual_buy_detail.xml #generated:23
+# view res/layout/activity_virtual_schema_details.xml #generated:195
+-keep class com.qianjing.finance.view.virtual.FundDetailsView { <init>(...); }
+
+# view res/layout/activity_assemble_day_profit.xml #generated:54
+# view res/layout/activity_assemble_mine.xml #generated:10
+# view res/layout/activity_asset_list.xml #generated:11
+# view res/layout/activity_fund_style_layout.xml #generated:7
+# view res/layout/activity_history_steady.xml #generated:23
+# view res/layout/activity_rebalance_list.xml #generated:18
+# view res/layout/activity_time_desposit_profit.xml #generated:11
+# view res/layout/activity_virtual_assets.xml #generated:15
+# view res/layout/fragment_history_assemable.xml #generated:6
+# view res/layout/fragment_profit_assemable.xml #generated:6
+# view res/layout/myasset_trade_list.xml #generated:10
+-keep class com.qianjing.finance.widget.pulltorefresh.PullToRefreshListView { <init>(...); }
+
+# view res/layout/activity_assemble_asset.xml #generated:13
+# view res/layout/activity_fund_asset.xml #generated:13
+# view res/layout/activity_myasset.xml #generated:11
+# view res/layout/activity_time_desposit_asset.xml #generated:11
+# view res/layout/activity_wallet_new.xml #generated:8
+-keep class com.qianjing.finance.widget.pulltorefresh.PullToRefreshScrollView { <init>(...); }
+
+# view res/layout/activity_quick_new_layout.xml #generated:679
+-keep class com.qianjing.finance.widget.wheelview.ImageCycleView { <init>(...); }
+
+# view res/layout/three_wheel_layout.xml #generated:46
+-keep class com.qianjing.finance.widget.wheelview.WheelView { <init>(...); }
+
+# view res/layout/fund_all_history.xml #generated:8
+-keep class com.qianjing.finance.widget.xlistview.XListView { <init>(...); }
+
+# view res/layout/fina_guide_activity.xml #generated:23
+-keep class com.qjautofinancial.guide.GuideView { <init>(...); }
+
+# view res/layout/fina_guide_activity.xml #generated:8
+-keep class com.qjautofinancial.guide.GuideViewGroup { <init>(...); }
+
+# view res/layout/detail.xml #generated:8
+# view res/layout/image_item.xml #generated:6
+-keep class com.qjautofinancial.image.SmartImageView { <init>(...); }
+

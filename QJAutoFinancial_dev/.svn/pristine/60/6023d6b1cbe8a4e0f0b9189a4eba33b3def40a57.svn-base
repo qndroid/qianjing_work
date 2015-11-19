@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/include_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.qianjing.finance.view.custom.FloatScrollView
+            android:id="@+id/fsv_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_layout"
+            android:scrollbars="none" >
+			
+            <LinearLayout
+                android:id="@+id/ll_fsv_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/layout_main" >
+
+                    <com.qianjing.finance.view.indictorview.IndiactorView
+                        android:id="@+id/iv_indictor_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+                    
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_profit"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_profit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="95.71%"
+                        android:textColor="@color/white"
+                        android:textSize="50sp" />
+
+                    <TextView
+                        android:id="@+id/tv_profit_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="近半年收益率"
+                        android:textColor="#77ffffff" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tv_risk_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="波动性大"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/iv_risk_explain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/tv_risk_txt"
+                                android:src="@drawable/icon_warning" />
+
+                            <View
+                                style="@style/viewVertical"
+                                android:layout_height="15dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:background="@color/white" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_min_purchase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="¥14244.44起购"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.qianjing.finance.view.slidingtabstrip.PagerSlidingTabStrip
+                    android:id="@+id/psts_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </com.qianjing.finance.view.custom.FloatScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/xu_ni_buy_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/xu_ni_shi_tou_bg"
+                android:gravity="center"
+                android:text="@string/xu_ni_tou_zi"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/start_buy_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/kai_shi_tou_zi_bg"
+                android:gravity="center"
+                android:text="@string/kai_shi_tou_zi"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

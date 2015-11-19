@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:id="@+id/sc_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_selectedbank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/cp_light_white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_bankname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dip"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bankcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:paddingTop="5dip"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/im_rightarrow"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/img_right_arrow2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/cp_light_white"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/str_rachargemoney"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edit_money"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="0dip"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_alerttext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:textColor="@color/orange_alerttext" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:src="@drawable/information" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_fastcashtext" />
+
+                <TextView
+                    android:id="@+id/tv_redemption_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_ci" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_fastcash"
+                style="@style/btnNormal"
+                android:enabled="false"
+                android:text="@string/str_fastcrashtext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/str_fastcashdowntext"
+                android:textColor="@drawable/gray_text"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/bt_commoncash"
+                style="@style/btnNormal"
+                android:enabled="false"
+                android:text="@string/str_commoncash" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/str_commoncashundertext"
+                android:textColor="@drawable/gray_text"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal" >
+
+        <ViewStub
+            android:id="@+id/include_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout="@layout/activity_result_ok" />
+    </LinearLayout>
+
+</LinearLayout>

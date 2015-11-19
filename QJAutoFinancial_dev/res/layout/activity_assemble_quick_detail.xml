@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        style="@style/btnNormal"
+        android:text="申购" />
+
+</LinearLayout>

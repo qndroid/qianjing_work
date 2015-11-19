@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/profit_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:maxLines="2"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:text="@string/asset_yesterday_profit"
+        android:textColor="@color/blue_deep_grey"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@id/profit_view"
+        android:textColor="@color/red_VI" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/profit_view"
+        android:background="@color/low_stroke" />
+
+    <LinearLayout
+        android:id="@+id/top_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_assemble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/icon_assemble_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/icon_assemble" />
+
+            <TextView
+                android:id="@+id/assemble_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/icon_assemble_view"
+                android:text="组合"
+                android:textColor="@color/blue_deep_grey"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/yesterday_profit_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/assemble_name_view"
+                android:layout_below="@id/assemble_name_view"
+                android:layout_marginTop="2dp"
+                android:text="昨日涨跌：+60.00%"
+                android:textColor="@color/blue_light_grey"
+                android:textSize="12sp" />
+			
+            <TextView
+                android:id="@+id/tv_assemble_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/assemble_name_view"
+                android:layout_below="@id/yesterday_profit_view"
+                android:layout_marginTop="21dp"
+                android:text="昨日涨跌：+60.00%"
+                android:textColor="@color/blue_light_grey" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/low_stroke" />
+
+        <RelativeLayout
+            android:id="@+id/rl_fund"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/icon_fund_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/icon_asset_fund" />
+
+            <TextView
+                android:id="@+id/fund_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/icon_fund_view"
+                android:text="基金"
+                android:textColor="@color/blue_deep_grey"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/yesterday_fund_profit_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/fund_name_view"
+                android:layout_below="@id/fund_name_view"
+                android:layout_marginTop="2dp"
+                android:text="昨日涨跌：+60.00%"
+                android:textColor="@color/blue_light_grey"
+                android:textSize="12sp" />
+			
+            <TextView
+                android:id="@+id/tv_fund_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/fund_name_view"
+                android:layout_below="@id/yesterday_fund_profit_view"
+                android:layout_marginTop="21dp"
+                android:text="昨日涨跌：+60.00%"
+                android:textColor="@color/blue_light_grey" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_two"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/top_content_layout"
+        android:background="@color/low_stroke" />
+
+    <LinearLayout
+        android:id="@+id/bottom_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_two"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_bao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/icon_time_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/icon_time_deposity" />
+
+            <TextView
+                android:id="@+id/time_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/icon_time_view"
+                android:text="定存宝"
+                android:textColor="@color/blue_deep_grey"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/time_profit_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/time_name_view"
+                android:layout_below="@id/time_name_view"
+                android:layout_marginTop="2dp"
+                android:text="昨日涨跌：+60.00%"
+                android:textColor="@color/blue_light_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_bao_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/time_name_view"
+                android:layout_below="@id/time_profit_view"
+                android:layout_marginTop="21dp"
+                android:text="昨日涨跌：+60.00%"
+                android:textColor="@color/blue_light_grey" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/low_stroke" />
+
+        <RelativeLayout
+            android:id="@+id/rl_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/icon_money_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/icon_money" />
+
+            <TextView
+                android:id="@+id/money_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/icon_money_view"
+                android:text="活期宝"
+                android:textColor="@color/blue_deep_grey"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/money_profit_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/money_name_view"
+                android:layout_below="@id/money_name_view"
+                android:layout_marginTop="2dp"
+                android:text="昨日涨跌：+60.00%"
+                android:textColor="@color/blue_light_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_wallet_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/money_name_view"
+                android:layout_below="@id/money_profit_view"
+                android:layout_marginTop="21dp"
+                android:text="昨日涨跌：+60.00%"
+                android:textColor="@color/blue_light_grey" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/low_stroke" />
+    </LinearLayout>
+
+</RelativeLayout>

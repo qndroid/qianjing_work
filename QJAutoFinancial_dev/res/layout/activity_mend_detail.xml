@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dip"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="38dip"
+            android:background="@drawable/bg_mend_bank"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="92dip"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mend_bank"
+                    android:textColor="@color/gray_black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0.5dip"
+                android:layout_height="match_parent"
+                android:background="@color/gray_black" />
+
+            <RelativeLayout
+                android:layout_width="60dip"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/iv_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/defult" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="190dip"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tv_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="工商银行（尾号4987）"
+                    android:textColor="@color/gray_black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fund_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="基金名称"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_item2_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="占比(%)"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_item3_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="申购金额(元)"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/viewLine"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp" />
+
+            <View
+                style="@style/viewLine"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dip"
+        android:layout_marginTop="20dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip" />
+
+        <Button
+            android:id="@+id/btn_mend_confirm"
+            style="@style/btnNormal"
+            android:text="@string/mend_confirm" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mend_prompt_title"
+                android:textColor="@color/gray_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mend_prompt_1"
+                android:textColor="@color/gray_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mend_prompt_2"
+                android:textColor="@color/gray_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mend_advisory"
+            android:textColor="@color/gray_black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

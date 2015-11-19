@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    style="@style/layoutMain" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <LinearLayout
+         android:layout_marginTop="50dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <View style="@style/viewLine" />
+
+        <TextView
+            android:id="@+id/tv_risk"
+            style="@style/textNormalSingle" />
+
+        <View
+            style="@style/viewLine"
+            android:layout_marginLeft="10dip" />
+
+        <ListView
+            android:id="@+id/main_menu_grid_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/line_gray"
+            android:dividerHeight="1dip"
+            android:listSelector="@drawable/transparent"
+            android:layout_weight="1"
+            android:background="#ffffff" />
+
+        <LinearLayout style="@style/linearWhite" >
+
+            <View style="@style/viewLine" />
+
+            <TextView
+                style="@style/textNormalSingle"
+                android:text="投资方案：" />
+
+            <TextView
+                android:id="@+id/tv_first"
+                style="@style/textNormalSmall"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_eachmonth"
+                style="@style/textNormalSmall"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" />
+
+            <TextView
+                android:id="@+id/tv_reminder"
+                style="@style/textNormalSmall"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:text="每个季度我们将通过短信和客户端通知您更换组合。" />
+
+            <View style="@style/viewLine" />
+        </LinearLayout>
+        <!--  -->
+
+        <Button
+            android:id="@+id/But_submit"
+            style="@style/btnNormal"
+            android:text="@string/btn_buy" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/But_save"
+            style="@style/btnNormalGray"
+            android:text="@string/btn_buy_virtual" />
+       
+    </LinearLayout>
+  <include
+        android:id="@+id/re_schema_edit"
+        layout="@layout/include_assemble_edit"
+        android:visibility="gone" />
+</RelativeLayout>

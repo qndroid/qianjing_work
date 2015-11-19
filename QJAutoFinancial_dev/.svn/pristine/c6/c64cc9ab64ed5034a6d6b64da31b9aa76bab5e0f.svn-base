@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/include_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.qianjing.finance.view.custom.FloatScrollView
+            android:id="@+id/fsv_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_fsv_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_advice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_advice_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@color/bg_assemble_config"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <CheckBox
+                            android:id="@+id/cb_plan_one"
+                            style="@style/PlanCheckBox"
+                            android:layout_height="wrap_content"
+                            android:text="计划一" />
+
+                        <CheckBox
+                            android:id="@+id/cb_plan_two"
+                            style="@style/PlanCheckBox"
+                            android:layout_height="wrap_content"
+                            android:text="计划二" />
+
+                        <CheckBox
+                            android:id="@+id/cb_plan_three"
+                            style="@style/PlanCheckBox"
+                            android:layout_height="wrap_content"
+                            android:text="计划三" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_advice_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:visibility="gone"
+                        android:background="@color/bg_assemble_config" />
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="168dp"
+                        android:background="@color/bg_assemble_config" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/bg_advice"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_invest_plan_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:gravity="center"
+                                android:padding="0dp"
+                                android:text="首投+定投投资计划"
+                                android:textColor="@color/red_VI"
+                                android:textSize="19sp" />
+
+                            <View
+                                style="@style/viewLine"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:background="@color/red_VI" />
+
+                            <TextView
+                                android:id="@+id/tv_invest_plan_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="12dp"
+                                android:text="@string/invest_plan_two"
+                                android:textColor="@color/blue_deep_grey"
+                                android:textSize="17sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="0dp"
+                                    android:text="@string/invest_plan_expect"
+                                    android:textColor="@color/blue_deep_grey"
+                                    android:textSize="17sp" />
+
+                                <ImageView
+                                    android:id="@+id/iv_explain"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginRight="3dp"
+                                    android:src="@drawable/info" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="0dp"
+                                    android:text=":"
+                                    android:textColor="@color/blue_deep_grey"
+                                    android:textSize="17sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_expect_profit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="10000-20000元"
+                                android:textColor="@color/blue_deep_grey"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:background="@color/bg_assemble_config" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_profit"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_profit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="95.71%"
+                        android:textColor="@color/white"
+                        android:textSize="50sp" />
+
+                    <TextView
+                        android:id="@+id/tv_profit_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="近半年收益率"
+                        android:textColor="#77ffffff" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tv_risk_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="波动性大"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/iv_risk_explain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/tv_risk_txt"
+                                android:src="@drawable/icon_warning" />
+
+                            <View
+                                style="@style/viewVertical"
+                                android:layout_height="15dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:background="@color/white" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_min_purchase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="¥14244.44起购"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.qianjing.finance.view.slidingtabstrip.PagerSlidingTabStrip
+                    android:id="@+id/psts_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/ll_bottom_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fund_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qianjingdesheng"
+                        android:textColor="@color/grey_middle_txt" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.qianjing.finance.view.custom.FloatScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#aa000000" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true" >
+
+                    <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_first" />
+						
+                        <TextView
+                            android:id="@+id/tv_first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="¥1228"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_month" />
+
+                        <TextView
+                            android:id="@+id/tv_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="¥1228"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_first"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_year" />
+
+                        <TextView
+                            android:id="@+id/tv_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="100年"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/red" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="立即投资"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/start_buy_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/kai_shi_tou_zi_bg"
+                android:gravity="center"
+                android:text="@string/kai_shi_tou_zi"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

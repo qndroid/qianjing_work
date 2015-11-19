@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置 用户反馈 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        style="@style/linearShape"
+        android:layout_marginTop="10dip"
+        android:minHeight="120dip" >
+
+        <RelativeLayout style="@style/tableRow" >
+
+            <EditText
+                android:id="@+id/Reset_infor"
+                style="@style/editNormal"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="吐槽产品经理"
+                android:singleLine="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            style="@style/tableRow"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/But_send"
+                style="@style/btnNormal"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:text="发送" />
+
+            <Button
+                android:id="@+id/But_reset"
+                style="@style/btnNormalGray"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="@string/BTN_RESET" />
+        </LinearLayout>
+    
+</LinearLayout>

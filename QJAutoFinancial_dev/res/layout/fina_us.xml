@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置 关于我们 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+  
+
+    <include layout="@layout/title" />
+      <LinearLayout  
+         android:layout_marginTop="25dip"
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:gravity="center_horizontal" 
+         android:orientation="vertical"> 
+         <ImageView  
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+             android:background="@drawable/about_logo" 
+             /> 
+     </LinearLayout> 
+     <ScrollView style="@style/scroll" >
+
+        <LinearLayout style="@style/linear">
+
+            <View style="@style/viewLineTop" />
+			<LinearLayout style="@style/linear"
+			    android:background="@drawable/white"
+			    >
+            <RelativeLayout
+                android:id="@+id/rl_company"
+                style="@style/tableRow" >
+
+                <TextView
+                    style="@style/textNormal"
+                    android:text="公司简介" />
+                <ImageView
+                    style="@style/imageRight"
+                    android:src="@drawable/img_right_arrow2" />
+            </RelativeLayout>
+
+            <View style="@style/viewLineMiddle" />
+
+            <RelativeLayout
+                android:id="@+id/rl_card"
+                style="@style/tableRow" >
+
+                <TextView
+                    style="@style/textNormal"
+                    android:text="QQ群号" />
+ <TextView
+                    style="@style/UstextNormalRight"
+                    android:text="304731913" />
+            </RelativeLayout>
+
+            <View style="@style/viewLineMiddle" />
+
+            <RelativeLayout
+                android:id="@+id/rl_us"
+                style="@style/tableRow" >
+
+                <TextView
+                    style="@style/textNormal"
+                    android:text="微信公众号" />
+
+                 <TextView
+                    style="@style/UstextNormalRight"
+                    android:text="qianjingcaifu" />
+            </RelativeLayout>
+
+            <View style="@style/viewLineMiddle" />
+
+            <RelativeLayout
+                android:id="@+id/rl_user"
+                style="@style/tableRow" >
+
+                <TextView
+                    style="@style/textNormal"
+                    android:text="新浪微博"/>
+
+                <TextView
+                    android:id="@+id/SmallNote"
+                    style="@style/UstextNormalRight"
+                    android:text="\@钱景私人理财" />
+            </RelativeLayout>
+
+            <View style="@style/viewLineMiddle" />
+
+            <RelativeLayout
+                android:id="@+id/rl_telophone"
+                style="@style/tableRow" >
+
+                <TextView
+                    style="@style/textNormal"
+                    android:text="客服电话" />
+
+                 <TextView
+                     android:id="@+id/Telophone"
+                    style="@style/textNormalRight"
+                    android:text="@string/CLIENT_PHONE"
+                    android:textColor="#081caf" />
+                
+            </RelativeLayout>
+
+            <View style="@style/viewLineMiddle" />
+ 			<RelativeLayout
+                style="@style/tableRow" >
+
+                <TextView
+                    style="@style/textNormal"
+                    android:text="版本号" />
+
+                 <TextView
+                     android:id="@+id/VerNub"
+                    style="@style/textNormalRight"
+                    android:text=" "
+                    />
+                
+            </RelativeLayout>
+
+           
+           
+			</LinearLayout>
+            <View style="@style/viewLine" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

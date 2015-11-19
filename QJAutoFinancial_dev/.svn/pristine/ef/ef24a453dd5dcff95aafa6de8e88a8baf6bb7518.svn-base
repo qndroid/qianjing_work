@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/layout_main"
+    android:orientation="vertical" >
+
+    <com.qianjing.finance.view.custom.VIPFreeScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                
+                <ImageView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/find_custom"/>
+                
+                <TextView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#99000000"
+                    android:text="专属理财"/>
+                
+            </LinearLayout>
+            
+            
+           <LinearLayout
+                android:id="@+id/ll_sp_custom"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:gravity="center">
+                
+                <!-- <ImageView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/custom_icon"/>
+                
+                <TextView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="尊享定制"
+                    android:textColor="#000000"/> -->
+                    
+                <View
+                    style="@style/viewLine"
+                    android:layout_height="0.1dp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:drawablePadding="10dp"
+                        android:clickable="false"
+                        android:drawableTop="@drawable/custom_icon"
+                        android:text="尊享定制服务"
+                        android:textColor="@drawable/gray_text"
+                        android:textSize="18sp" >
+                    </Button>
+                    
+                <View
+                    style="@style/viewLine"
+                    android:layout_height="0.1dp"/>
+            </LinearLayout>
+            
+            
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                
+                <ImageView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/find_schema"/>
+                
+                <TextView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#99000000"
+                    android:text="理财计划"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/viewLine"
+                    android:layout_height="0.1dp"/>
+                
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" 
+                	android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/ButAddFina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/img_find_financial"
+                        android:text="理财增值"
+                        android:textColor="@drawable/gray_text"
+                        android:textSize="18sp" >
+                    </Button>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="110dip"
+                        android:background="@color/color_c8c7cc" />
+
+                    <Button
+                        android:id="@+id/ButPension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/img_find_retire"
+                        android:text="存钱养老"
+                        android:textColor="@drawable/gray_text"
+                        android:textSize="18sp" >
+                    </Button>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="110dip"
+                        android:background="@drawable/gray_frame" />
+
+                    <Button
+                        android:id="@+id/ButBuyHouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/img_find_property"
+                        android:text="存钱购房"
+                        android:textColor="@drawable/gray_text"
+                        android:textSize="18sp" >
+                    </Button>
+                </LinearLayout>
+
+                <View style="@style/viewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+					
+                    <Button
+                        android:id="@+id/ButChildEdu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/img_find_education"
+                        android:text="存钱育儿"
+                        android:textColor="@drawable/gray_text"
+                        android:textSize="18sp" >
+                    </Button>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="110dip"
+                        android:background="@drawable/gray_frame" />
+
+                    <Button
+                        android:id="@+id/ButMarried"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/img_find_merry"
+                        android:text="存钱结婚"
+                        android:textColor="@drawable/gray_text"
+                        android:textSize="18sp" >
+                    </Button>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="110dip"
+                        android:background="@drawable/gray_frame" />
+
+                    <Button
+                        android:id="@+id/ButtSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/img_find_small"
+                        android:text="梦想基金"
+                        android:textColor="@drawable/gray_text"
+                        android:textSize="18sp" >
+                    </Button>
+                </LinearLayout>
+
+                <View style="@style/viewLine" />
+
+                <LinearLayout
+                    android:id="@+id/ll_sia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:text="投资计划建议由德圣基金研究团队的专业模型得出,提供独立、深入、独到的投资观点"
+                        android:textColor="#66000000"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/img_right_arrow2" />
+                </LinearLayout>
+
+            </LinearLayout>
+            
+            
+             <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                
+                <ImageView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/find_change"/>
+                
+                <TextView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#99000000"
+                    android:text="零钱储值"/>
+                
+            </LinearLayout>
+            
+            
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/white"
+                        android:orientation="horizontal"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/wallet_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center"
+                                android:text="活期宝"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+					
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/img_right_arrow2" />
+                </RelativeLayout>
+                
+            	<View 
+            	    android:layout_width="match_parent"
+            	    android:layout_height="30dp"/>
+            
+        </LinearLayout>
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+
+</LinearLayout>

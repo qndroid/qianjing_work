@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fund_list_item_bg" >
+
+    <TextView
+        android:id="@+id/fund_title"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/color_6c6c6c"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/fund_title_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/fund_title"
+        android:background="@color/color_e4e4e4" />
+
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fund_title_divider"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/fund_shouyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_e41f23"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/fund_wanfeng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fund_shouyi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/color_bcbcbc"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_e4e4e4" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" >
+
+            <RelativeLayout
+                android:id="@+id/fund_ratechange_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/fund_ratechange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/color_e41f23"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/pretect_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/fund_ratechange"
+                    android:layout_toRightOf="@id/fund_ratechange"
+                    android:text="@string/str_percent"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fund_ratechange_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fund_ratechange_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/color_bcbcbc"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_e4e4e4" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/qi_gou_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/color_6c6c6c"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fund_qigou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qi_gou_money"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/str_qigoumoney"
+                android:textColor="@color/color_bcbcbc"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

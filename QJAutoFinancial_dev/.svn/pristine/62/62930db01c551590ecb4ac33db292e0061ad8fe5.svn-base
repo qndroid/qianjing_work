@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear" >
+    <View style="@style/viewLine"/>
+    <LinearLayout style="@style/tableRow"
+        android:background="@drawable/white"
+        >
+        <TextView 
+            android:id="@+id/tv_bank"
+            style="@style/textNormal"
+            android:layout_marginRight="10dip"
+            />
+        <TextView 
+            android:id="@+id/tv_card"
+            style="@style/textNormal"
+            />
+        </LinearLayout>
+    <View style="@style/viewLine"/>
+</LinearLayout>

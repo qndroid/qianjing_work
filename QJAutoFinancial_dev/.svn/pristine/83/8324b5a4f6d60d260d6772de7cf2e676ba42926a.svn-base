@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:id="@+id/sc_showcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_selectedbank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/cp_light_white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_bankname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dip"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bankcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:paddingTop="5dip"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/im_rightarrow"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/img_right_arrow2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:src="@drawable/information" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_rechargelimittext" />
+
+                <TextView
+                    android:id="@+id/tv_single_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange_alerttext" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_yuan" />
+            </LinearLayout>
+
+            <!-- 金额 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/cp_light_white"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/str_rachargemoney"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edit_money"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/str_rechargemoneydescription"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="0dip"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_alerttext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:textColor="@color/orange_alerttext" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/btn_recharge"
+                style="@style/btnNormal"
+                android:text="@string/str_rechargesuretext" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="0dip"
+                    android:text="@string/str_rechargesuremsg"
+                    android:textColor="@drawable/gray_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_arrivaltime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dip"
+                    android:paddingRight="10dip"
+                    android:textColor="@color/orange_alerttext"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <include layout="@layout/activity_quick_footer" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        layout="@layout/activity_result_ok"
+        android:visibility="gone" />
+
+</RelativeLayout>

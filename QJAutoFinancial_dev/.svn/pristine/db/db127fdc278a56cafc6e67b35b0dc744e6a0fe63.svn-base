@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <!-- com.qianjing.finance.widget.pulltorefresh.PullToRefresh -->
+
+    <com.qianjing.finance.widget.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/pull_to_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp" >
+
+            <RelativeLayout
+                android:id="@+id/leiji_layout"
+                android:layout_width="match_parent"
+                android:layout_height="213dp"
+                android:background="@drawable/bg_assert" >
+
+                <TextView
+                    android:id="@+id/lei_ji_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="36dp"
+                    android:text="@string/fund_yesterday_profit"
+                    android:textColor="@color/color_9098b4"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/lei_ji_value_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/lei_ji_view"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/lei_ji_view"
+                    android:textColor="@color/color_9098b4"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/leji_info_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/lei_ji_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_dingcun_info" />
+
+                <TextView
+                    android:id="@+id/leiji_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/lei_ji_view"
+                    android:layout_below="@id/lei_ji_view"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/red_VI" />
+
+                <TextView
+                    android:id="@+id/dai_shouyi_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/lei_ji_view"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/color_9098b4"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                android:background="@drawable/bg_quickbuy_click_drawable" >
+
+                <TextView
+                    android:id="@+id/all_assert_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/assemble_asset_total"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/all_info_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/all_assert_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_dingcun_info" />
+
+                <TextView
+                    android:id="@+id/all_assert_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/all_assert_view"
+                    android:layout_below="@id/all_assert_view"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/blue_deep_grey" />
+
+                <TextView
+                    android:id="@+id/buying_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/all_assert_view"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/blue_light_grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/redeem_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/buying_view"
+                    android:textColor="@color/blue_light_grey"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_dddddd" />
+
+            <TextView
+                android:id="@+id/scan_assert_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="58dp"
+                android:background="@drawable/bg_dingcun_scan_asset"
+                android:gravity="center"
+                android:text="@string/time_disport_scan_aset"
+                android:textColor="@color/blue_deep_grey"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </com.qianjing.finance.widget.pulltorefresh.PullToRefreshScrollView>
+
+</RelativeLayout>

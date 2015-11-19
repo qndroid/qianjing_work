@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear" >
+
+    <RelativeLayout
+        style="@style/tableRow"
+        android:paddingLeft="0dip" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/textSmallBlack"
+            android:layout_width="100dip"
+            android:layout_centerVertical="true"
+            android:text="易基天天理财货" />
+
+        <ProgressBar
+            android:id="@+id/probar"
+            style="@style/ProgressBarNormal"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_progress_back" />
+
+        <TextView
+            android:id="@+id/tv_scale"
+            style="@style/textSmallBlack"
+            android:layout_width="50dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/tv_name"
+            android:gravity="center"
+            android:text="20%" />
+
+    </RelativeLayout>
+
+</LinearLayout>

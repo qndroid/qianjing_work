@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="@dimen/balance_enter_2"
+        android:layout_width="match_parent"
+        android:id="@+id/rl_balance__list_enter"
+        android:background="#f9dfde">
+        
+        <ImageView
+            android:id="@+id/iv_sound"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/sound_red"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"/>
+        
+        <TextView
+            android:id="@+id/tv_balance__list_enter"
+            android:layout_toRightOf="@+id/iv_sound"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/balance_list_title_one"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:textColor="#77000000"/>
+        
+        
+</RelativeLayout>
+

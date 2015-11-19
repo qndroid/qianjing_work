@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置 关于我们 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+  
+
+    <include layout="@layout/title" />
+      <LinearLayout 
+         android:visibility="gone" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:gravity="center_horizontal" 
+         android:orientation="vertical"> 
+         <ImageView  
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+             android:background="@drawable/about_logo" 
+             /> 
+     </LinearLayout> 
+     <ScrollView style="@style/scroll" >
+
+        <LinearLayout style="@style/linear"
+            android:layout_marginTop="10dip">
+
+            <RelativeLayout
+                android:layout_margin="10dip"
+                android:id="@+id/rl_account"
+                style="@style/tableRow" 
+                android:background="@drawable/shape_white">
+
+               <TextView
+                android:id="@+id/tv_user"
+                style="@style/textNormal"
+                android:lineSpacingMultiplier="1.1"
+                android:text="钱景私人理财是国内首个提供资产配置、分散投资、跟踪服务的一站式理财生活服务平台。钱景理财以用户各自不同的理财需求为基础，根据每个用户的风险偏好、财务状况、家庭结构等因素，为用户量身定制出不同的理财配置方案，并提供一站式的购买流程操作体验。" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

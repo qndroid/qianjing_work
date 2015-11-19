@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain"
+    android:layout_width="match_parent" >
+
+    <include layout="@layout/include_title" />
+
+    <com.qianjing.finance.view.custom.VIPFreeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/layoutMain" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cp_light_white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="组合名称"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+
+                    <TextView
+                        android:id="@+id/tv_assemble_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="理财增值组合"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收费方式"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+
+                    <TextView
+                        android:id="@+id/tv_fee_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="前端收费"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付方式"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="协议代扣款"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/viewLine" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cp_light_white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行卡号"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+
+                    <TextView
+                        android:id="@+id/tv_card_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="招商银行 ( 尾号3799 )"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_downpayment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="首次投入"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+
+                    <TextView
+                        android:id="@+id/tv_downpayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="￥2000.00"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="定投金额"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+
+                    <TextView
+                        android:id="@+id/tv_monthly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="￥300.00"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="定投周期"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="每月"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="定投日期"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="15日"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="首次扣款日期"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+
+                    <TextView
+                        android:id="@+id/tv_date_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="2015/08/10"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/purchase_details_item" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/viewLine" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="交易明细"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <View style="@style/viewLine" />
+
+            <ListView
+                android:id="@+id/lv_buy_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cp_light_white"
+                android:divider="@null" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/btnNormal"
+                android:text="确认定投" />
+        </LinearLayout>
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+
+</LinearLayout>

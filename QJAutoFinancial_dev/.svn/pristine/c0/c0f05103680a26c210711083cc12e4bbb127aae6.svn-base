@@ -1,0 +1,398 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <com.qianjing.finance.widget.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/ptrsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0eff5"
+        android:scrollbars="none" >
+		
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			
+            <View
+                style="@style/viewLine"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/total_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/rl_total_assets"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/assets_head"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+					
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/iv_assets_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/my_assets" />
+							
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/iv_assets_icon"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tv_total_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="总资产"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+								
+                                <TextView
+                                    android:id="@+id/tv_total_title_unit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:text="（ 元 ）"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+							
+                            <ImageView
+                                android:id="@+id/iv_assets_list_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/icon_yesterday_profit" />
+                        </RelativeLayout>
+
+                        <!-- 总资产 -->
+
+                        <TextView
+                            android:id="@+id/tv_assets_total_value"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center_vertical"
+                            android:text="--.--"
+                            android:textColor="@color/white"
+                            android:textSize="38sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/viewLine"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/ll_purchase_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/assets_common"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_purchase_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:text="申购中（元）："
+                        android:textColor="#f6eab8"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_assets_purchase_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="--.--"
+                        android:textColor="#f6eab8"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_type_switch_hide"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/assets_profit"
+                android:background="@color/white"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/tv_cumulative_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="累计盈亏（元）："
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_assets_cumulative_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_cumulative_title"
+                    android:text="--.--"
+                    android:textColor="#666666"
+                    android:textSize="21sp" />
+
+                <ImageView
+                    android:id="@+id/iv_profit_list_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/icon_total_asset_record" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_switch_line"
+                style="@style/viewLine"
+                android:background="@color/color_line" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="36dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_assets_comb_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/assets_common"
+                android:background="@drawable/bg_history_item"
+                android:orientation="vertical" >
+
+                <View
+                    style="@style/viewLine"
+                    android:background="@color/color_line" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/my_comb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="我的组合"
+                            android:textColor="@color/color_6c6c6c"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/balance_red"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_assets_comb_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp"
+                            android:textColor="@color/color_6c6c6c"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_right_arrow2" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_assets_fund_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/assets_common"
+                android:background="@drawable/bg_history_item"
+                android:orientation="vertical" >
+
+                <View
+                    style="@style/viewLine"
+                    android:background="@color/color_line" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/my_fund" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="我的基金"
+                            android:textColor="@color/color_6c6c6c"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_assets_fund_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp"
+                            android:text=""
+                            android:textColor="@color/color_6c6c6c"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_right_arrow2" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_assets_money_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/assets_common"
+                android:background="@drawable/bg_history_item"
+                android:orientation="vertical" >
+
+                <View
+                    style="@style/viewLine"
+                    android:background="@color/color_line" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_money_pic"
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/my_money" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="活期宝"
+                            android:textColor="@color/color_6c6c6c"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_assets_money_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp"
+                            android:text=""
+                            android:textColor="@color/color_6c6c6c"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_right_arrow2" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/viewLine"
+                android:background="@color/color_line" />
+            
+            <!--底栏高度补充  -->
+            <View
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/radio_button_height" />
+            
+        </LinearLayout>
+    </com.qianjing.finance.widget.pulltorefresh.PullToRefreshScrollView>
+
+</LinearLayout>

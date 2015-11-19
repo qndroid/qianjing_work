@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qjautofinancial"
+    android:versionCode="300000"
+    android:versionName="3.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.qianjing.finance.ui.QApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- common -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.SplashActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 组合定投界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.aip.AssembleAIPBuyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.aip.AssembleAIPBuyDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.aip.AssembleAIPBuyResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.aip.modify.AssembleAIPDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.aip.modify.AssembleAIPModifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.aip.modify.AssembleAIPModifyDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.aip.modify.AssembleAIPModifyResultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.aip.chargedetail.AIPChargeDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.aip.chargedetail.AIPFundChargeDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 定存相关 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.timedeposit.TimeDepositAssetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.timedeposit.TimeDepositProfitActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.timedeposit.TimeDepositDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 推荐相关 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.recommand.RecommandDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.recommand.RecommandRedeemActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.recommand.RecommandRedeemResultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.recommand.RecommandFundDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 新版资产页相关 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.asset.FundAssetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.asset.FundAssetListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.asset.AssembleAssetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.asset.AssembleAssetListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.asset.VirtualAssetListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 申购结果界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleBuyResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.GestureLockActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.EnterModeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.SetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.AssembleIntroduceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.AdsContentsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleTradeListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleTradeDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.WebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.P2PWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 消息通知页面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.InformActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 消息通知页面点击后显示结果页面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.InformDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 组合 -->
+        <!-- 理财增值组合首界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.type.AssembleInvestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 存钱养老组合首界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.type.AssemblePensionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 存钱育儿组合首界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.type.AssembleChildrenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 存钱买房组合首界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.type.AssembleHouseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 存钱结婚组合首界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.type.AssembleMarryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 梦想基金组合首界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.type.AssembleDreamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 组合配置详情界面（新版） -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleAIPConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 组合名称保存界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleModifyNameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 组合详情界面（新版） -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 申购金额界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleBuyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 申购详情界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleBuyDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleMendDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.redeem.AssembleRedeemDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.redeem.AssembleRedeemConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.redeem.AssembleRedeemResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- Card -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.card.CardBoundOneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.card.CardBoundThreeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.card.CardBoundTwoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.card.CardManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 账户相关 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.UserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.PassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.AccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.PassWordManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.PassResetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.CompanyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.AgreementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.VersionDescriptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.UserfeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.account.AccountDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 银联插件 -->
+        <activity
+            android:name="com.hxcr.chinapay.activity.Initialize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/cp_Animation" />
+        <activity
+            android:name="com.hxcr.chinapay.activity.InfoMain"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/cp_Animation"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.hxcr.chinapay.activity.ResultInfo"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/cp_Animation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.hxcr.chinapay.activity.HelpMain"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/cp_Animation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.hxcr.chinapay.activity.SustainBankList"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/cp_Animation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.hxcr.chinapay.activity.SubmitSujestion"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/cp_Animation"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 钱包主界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.wallet.WalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 钱包充值界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.wallet.WalletRechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 钱包取现界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.wallet.WalletCashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 钱包收益明细界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.wallet.WalletProfitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 再平衡主界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.rebalance.RebalanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 再平衡列表 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.rebalance.RebalanceListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 再平衡关于界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.rebalance.RebalanceAboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 再平衡原因界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.rebalance.RebalanceReasonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 再平衡结果界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.rebalance.RebalanceResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 再平衡持仓界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.rebalance.RebalanceHoldingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 再平衡历史详情界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.rebalance.RebalanceHistoryDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 快钱主界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.card.QuickBillActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 快钱短信验证界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.card.QuickBillVerifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 快钱选择银行界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.card.QuickBillBankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 投资基金 -->
+        <!-- 基金主界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.search.FundActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.search.FundSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.RewardListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.asset.FundMineHoldingDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.buy.FundDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.buy.FundBuyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.buy.PurchaseDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.CardListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.buy.FundResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.fund.redeem.FundRedeemConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.quickbuy.QuickFundDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.custom.VIPCustomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateVisible" />
+
+        <!-- 推送跳转接收器 -->
+        <receiver android:name="com.qianjing.finance.receiver.HandleReceiver" >
+            <intent-filter>
+                <action android:name="com.qianjing.intent.launch.login" />
+                <action android:name="com.qianjing.intent.launch.ads" />
+                <action android:name="com.qianjing.intent.launch.lock" />
+                <action android:name="com.qianjing.intent.launch.guide" />
+                <action android:name="com.qianjing.intent.launch.message" />
+                <action android:name="com.qianjing.intent.launch.what" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 推送接收器 -->
+        <receiver
+            android:name="com.qianjing.finance.receiver.PushReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.qjautofinancial" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.qianjing.finance.service.PushService" />
+        <service android:name="com.qianjing.finance.service.UpdateFundService" />
+        <service android:name="com.qianjing.finance.service.update.UpdateService" />
+
+        <!-- JPush核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- JPush核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.qjautofinancial" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="com.qjautofinancial" />
+            </intent-filter>
+        </receiver>
+
+        <!-- JPush核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="a562fb775ee0b1ba25711a10" />
+
+        <!-- 友盟APPKEY -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53f1d56efd98c5028300aed5" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="525" />
+
+        <!-- 虚拟测试入口 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.virtual.VirtualTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 我的组合入口 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleMineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.profit.AssembelDayProfitActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.profit.AssembleDayProfitDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 快速申购界面 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.quickbuy.QuickAssembleBuyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.quickbuy.QuickBuyConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.quickbuy.QuickBuyResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.virtual.VirtualSchemaDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.virtual.VirtualBuyDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 新版简化申购流程 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.purchase.PurchaseBuyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.purchase.PurchaseConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.purchase.PurchaseResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.purchase.PurchaseVirtualResult"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.virtual.HoldingDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 修改方案，对方案进行处理 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.common.DealWithSchema"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 定制组合详情 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.custom.CustomDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 总的历史记录 -->
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.BaseHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.AllTradeHistory"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.SteadyHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        
+        <activity
+            android:name="com.qianjing.finance.ui.activity.profit.ProfitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.AssembleHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.FundHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.WalletHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.AssembleHistoryDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.FundHistoryDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.WalletHistoryDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        
+        <activity
+            android:name="com.qianjing.finance.ui.activity.profit.SteadyProfitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.SteadyHistoryDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        
+        <activity
+            android:name="com.qianjing.finance.ui.activity.history.P2pHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        
+        <activity
+            android:name="com.qianjing.finance.ui.activity.assemble.AssembleSteadyDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        
+        
+    </application>
+
+    <permission
+        android:name="com.qjautofinancial.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.qjautofinancial.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- push Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="com.tencent.mtt.extension.Player" />
+    <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>

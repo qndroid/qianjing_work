@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView style="@style/scroll" >
+
+        <LinearLayout style="@style/linear" >
+
+            <EditText
+                android:id="@+id/Mobile_num"
+                style="@style/editFullWidth"
+                android:hint="请输入您的手机号码"
+                android:inputType="number"
+                android:maxLength="11" />
+
+            <RelativeLayout style="@style/relativeNormal" >
+
+                <Button
+                    android:id="@+id/But_SignCode"
+                    style="@style/btnShort" />
+
+                <EditText
+                    android:id="@+id/Sign_code"
+                    style="@style/editFullWidth"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dip"
+                    android:layout_toLeftOf="@id/But_SignCode"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/Set_pass"
+                style="@style/editFullWidth"
+                android:hint="@string/PassMSGinf"
+                android:maxLength="18"
+                android:password="true" />
+
+            <CheckBox
+                android:id="@+id/check"
+                style="@style/checkTextNormal"
+                android:checked="false"
+                android:text="显示密码" />
+
+            <TextView
+                style="@style/textPS"
+                android:text="@string/XML_PASS_MIND"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/But_RegSure"
+                style="@style/btnNormal"
+                android:text="注册" />
+
+            <LinearLayout
+                style="@style/linearHorizontal"
+                android:layout_marginRight="10dip" >
+
+                <CheckBox
+                    android:id="@+id/check_agree"
+                    style="@style/checkTextNormal"
+                    android:text="" />
+
+                <TextView
+                    style="@style/textNormalSmall"
+                    android:text="同意 " />
+
+                <TextView
+                    android:id="@+id/TFree"
+                    style="@style/textNormalSmall"
+                    android:text="《钱景用户服务协议》"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dip"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <!--
+          <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/regbotton"
+        />
+                -->
+            </LinearLayout>
+
+            <!--
+<TextView
+            android:gravity="center"
+android:layout_width="fill_parent"
+android:layout_height="100dip"
+android:background="#ffffff"
+android:textSize="22dip"
+            android:textColor="#0e1248"
+            android:text="只需几秒钟,您将拥有私人理财专家!"/>
+            -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_efeff4" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title" >
+
+        <FrameLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_timing_modify_result_order" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/shape_timing_modify_bg" >
+
+                <LinearLayout
+                    android:id="@+id/timing_result_title_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_timing_modify_result_success" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/timing_modify_result"
+                        android:textColor="@color/blue_deep_grey"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/timing_modify_result_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_result_title_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/timing_result_title_layout"
+                    android:layout_below="@id/timing_modify_result_time"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/timing_modify_repeat"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_repeat_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_modify_repeat"
+                    android:layout_toRightOf="@id/timing_modify_repeat"
+                    android:text="@string/mei_yue"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timing_modify_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/timing_result_title_layout"
+                    android:layout_below="@id/timing_modify_repeat"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_modify_time_two"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_modify_date"
+                    android:layout_toRightOf="@id/timing_modify_date"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timing_modify_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/timing_result_title_layout"
+                    android:layout_below="@id/timing_modify_date"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_modify_money_two"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_money_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_modify_money"
+                    android:layout_toRightOf="@id/timing_modify_money"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timing_modify_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/timing_result_title_layout"
+                    android:layout_below="@id/timing_modify_money"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/assemble_card_two"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_card_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_modify_card"
+                    android:layout_toRightOf="@id/timing_modify_card"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>

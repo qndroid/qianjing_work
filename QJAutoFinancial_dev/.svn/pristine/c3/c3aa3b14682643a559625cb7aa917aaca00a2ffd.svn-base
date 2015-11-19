@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain">
+    
+     <include 
+        layout="@layout/include_title"/>
+    
+    <com.qianjing.finance.widget.xlistview.XListView
+        
+        android:id="@+id/lv_fund_all_history"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none" >
+        
+    </com.qianjing.finance.widget.xlistview.XListView>
+    
+    <include
+        android:id="@+id/in_default_page"
+        layout="@layout/default_page"/>"
+    
+    
+</LinearLayout>

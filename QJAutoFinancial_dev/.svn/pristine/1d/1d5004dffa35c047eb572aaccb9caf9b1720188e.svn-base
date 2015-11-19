@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+
+    <TableLayout style="@style/table" >
+
+        <RelativeLayout style="@style/tableRow" >
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/textNormal"
+                android:text="当前我可以投入多少钱？" />
+
+            <TextView
+                android:id="@+id/et_money_label"
+                style="@style/textNormalRight"
+                android:text="元" />
+
+            <EditText
+                android:id="@+id/et_money"
+                style="@style/editRightDemical"
+                android:layout_toLeftOf="@id/et_money_label"
+                android:layout_toRightOf="@id/tv_money"
+                />
+        </RelativeLayout>
+    </TableLayout>
+
+    <TextView
+        style="@style/textNormal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:text="我偏好什么风险级别的投资？" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        style="@style/radioGroupFinancial"
+        android:checkedButton="@+id/rb_1" >
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            style="@style/textNormalSmall"
+            android:text="最大收益5%，最大损失0%；" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/textNormalSmall"
+            android:text="最大收益15%，最大损失-5%" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/textNormalSmall"
+            android:text="最大收益20%，最大损失-8%；" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            style="@style/textNormalSmall"
+            android:text="最大收益50%，最大损失-30%；" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/btnNormal"
+        android:text="@string/BTN_SUBMIT" />
+
+</LinearLayout>

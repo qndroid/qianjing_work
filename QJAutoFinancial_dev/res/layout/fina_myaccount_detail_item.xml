@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_education04"
+    style="@style/tableRow"
+    android:background="@drawable/white" >
+
+    <TextView
+        android:id="@+id/tv_mesg"
+        style="@style/textNormal" />
+
+    <ImageView
+        android:id="@+id/im_ico"
+        style="@style/imageRight"
+        android:layout_width="15dip"
+        android:layout_height="10dip"
+        android:src="@drawable/checkmark" />
+
+</RelativeLayout>

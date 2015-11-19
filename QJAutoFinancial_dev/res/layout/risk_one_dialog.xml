@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog"
+    android:gravity="center"
+    android:minWidth="240dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/textNormal"
+        android:layout_marginTop="10dip"
+        android:text="提示"
+        android:textSize="18sp" />
+
+    <View style="@style/viewLine" />
+
+    <ScrollView
+        android:layout_marginLeft="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="320dip"
+         >
+
+        <TextView
+            android:id="@+id/tv_msg"
+            style="@style/textNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:paddingBottom="20dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="left"
+            android:maxWidth="200dip"
+            android:textColor="@drawable/gray_text"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <View style="@style/viewLine" />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        style="@style/textNormalRed"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="确定"
+        android:textSize="18sp" />
+
+</LinearLayout>

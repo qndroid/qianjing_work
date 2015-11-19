@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain"
+    android:layout_width="match_parent" >
+
+    <include layout="@layout/include_title" />
+
+    <com.qianjing.finance.view.custom.VIPFreeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/layoutMain" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_timing_modify_result_order"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/iv_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_aip_success" />
+
+                        <TextView
+                            android:id="@+id/tv_group_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="0dp"
+                            android:paddingTop="5dp"
+                            android:text="定投申请已开通"
+                            android:textColor="@color/gray_black"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_op_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_status"
+                        android:layout_centerHorizontal="true"
+                        android:text="08/10 14:30"
+                        android:textColor="@color/gray_black"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_proment_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_op_time"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_prompt_index_1"
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="1."
+                            android:textColor="@color/gray_black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_prompt_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="首次申购部分扣款成功，预计08-11确认份额，08-14显示盈亏。"
+                            android:textColor="@color/gray_black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_proment_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_proment_1"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp" >
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="2."
+                            android:textColor="@color/gray_black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_prompt_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="首次定投扣款日期为08-10，扣款金额￥800。请确保卡上余额充足，以顺利实现您的理财目标。"
+                            android:textColor="@color/gray_black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@id/ll_proment_2" />
+
+                    <Button
+                        android:id="@+id/btn_detail"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_1"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_mend_bank"
+                        android:padding="10dp"
+                        android:text="查看定投详情"
+                        android:textColor="@color/gray_black"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="20dp"
+                android:text="交易明细"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+
+            <View style="@style/viewLine" />
+
+            <LinearLayout
+                android:id="@+id/ll_history_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View style="@style/viewLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="基金名称"
+                        android:textColor="@color/grey_low_txt"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_item2_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="首次投入(元)"
+                        android:textColor="@color/grey_low_txt"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_item3_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="每期投入(元)"
+                        android:textColor="@color/grey_low_txt"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/viewLine"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp" />
+
+                <View
+                    style="@style/viewLine"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            
+        </LinearLayout>
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+
+</LinearLayout>

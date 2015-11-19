@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 绑卡 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/layout_main" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:id="@+id/title_middle_text"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="地区"
+            android:textColor="@drawable/title_text_color"
+            android:textSize="20sp" />
+
+  <Button
+      android:id="@+id/bt_back"
+      style="@style/imageNormal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="5.0dip"
+      android:background="@drawable/title_left_but"
+      android:paddingLeft="10dip"
+      android:paddingRight="10dip"
+      android:paddingTop="3dip"
+      android:textColor="#ffffff"
+      android:textSize="18sp" />
+
+       <!--  <ImageView
+            android:id="@+id/title_left_image"
+            android:layout_width="46dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:src="@drawable/title_left_but" /> -->
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:divider="@null" >
+    </ListView>
+
+</RelativeLayout>

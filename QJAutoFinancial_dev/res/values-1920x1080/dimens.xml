@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="activity_dialog_height">470dp</dimen>
+
+</resources>

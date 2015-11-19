@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_history"
+    style="@style/layoutMain">
+    
+    <include
+        android:id="@+id/i_title"
+        layout="@layout/include_title"/>
+    
+   
+    <!-- 正文 -->
+    <FrameLayout
+        android:id="@+id/fl_popu"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            
+        </FrameLayout>
+        
+        
+        <View
+            android:id="@+id/fl_popup_bg"
+            android:layout_height="match_parent"
+        	android:layout_width="match_parent"
+        	android:background="#77000000"
+        	android:visibility="gone"/>
+        
+    </FrameLayout>
+    
+</LinearLayout>

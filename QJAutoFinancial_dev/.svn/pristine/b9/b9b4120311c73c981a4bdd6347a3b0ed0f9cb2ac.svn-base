@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 利用merge标签，减少无用布局嵌套 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp" >
+
+        <ImageView
+            android:id="@+id/icon_zhengjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_zheng_jian" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/icon_zhengjian"
+            android:text="@string/quick_info_one"
+            android:textColor="@color/color_5a6572"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="6dp" >
+
+        <ImageView
+            android:id="@+id/icon_ming_sheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_ming_sheng" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/icon_ming_sheng"
+            android:text="@string/quick_info_two"
+            android:textColor="@color/color_5a6572"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</merge>

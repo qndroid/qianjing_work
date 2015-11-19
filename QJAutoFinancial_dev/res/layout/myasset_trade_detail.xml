@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qianjing="http://schemas.android.com/apk/res/com.qjautofinancial"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        style="@style/scroll" >
+
+        <LinearLayout style="@style/linear" >
+
+            <LinearLayout
+                style="@style/linearWhite"
+                android:layout_marginTop="30dp" >
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="下单时间" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        style="@style/textNormalBlackRight" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewLine"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="交易类型" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        style="@style/textNormalBlackRight" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewLine"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="收费方式" />
+
+                    <TextView
+                        android:id="@+id/tv_feeway"
+                        style="@style/textNormalBlackRight"
+                        android:text="前端收费" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewLine"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="分红方式" />
+
+                    <TextView
+                        android:id="@+id/tv_way"
+                        style="@style/textNormalBlackRight"
+                        android:text="现金分红" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewLine"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="投资状态" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        style="@style/textNormalBlackRight" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/textNormal"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="交易详细：" />
+
+            <com.qianjing.finance.view.virtual.CustomDetailsView
+                android:id="@+id/cdv_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                qianjing:one_item="基金名称"
+                qianjing:three_item="状态"
+                qianjing:two_item="赎回份额" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

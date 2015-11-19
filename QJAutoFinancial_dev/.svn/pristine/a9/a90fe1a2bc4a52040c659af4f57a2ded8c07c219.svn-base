@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 重设登录密码 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/title" />
+<EditText
+        android:id="@+id/Mobile_num"
+        style="@style/editFullWidth"
+        android:hint="请输入手机号码"
+        android:maxLength="11"
+        android:inputType="number"
+        />
+    <RelativeLayout
+        style="@style/relativeNormal">
+
+        <Button
+            android:id="@+id/But_SignCode"
+            style="@style/btnShort" />
+
+        <EditText
+            android:id="@+id/Sign_code"
+            style="@style/editFullWidth"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dip"
+            android:layout_toLeftOf="@id/But_SignCode"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:maxLength="4" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/New_pass"
+        style="@style/editFullWidth"
+        android:hint="请输入新密码"
+        android:inputType="textPassword"
+        android:maxLength="18" />
+
+    <LinearLayout
+        style="@style/linearHorizontal"
+        android:layout_marginRight="10dip" >
+
+        <CheckBox
+            android:id="@+id/check"
+            style="@style/checkTextNormal"
+            android:checked="false"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_check"
+            style="@style/textNormalSmall"
+            android:text="显示密码" />
+    </LinearLayout>
+
+    <!-- <TextView
+        style="@style/textPS"
+        android:text="@string/XML_PASS_MIND" /> -->
+
+    <Button
+        android:id="@+id/BurSure"
+        style="@style/btnNormal"
+        android:text="确认提交" />
+
+</LinearLayout>

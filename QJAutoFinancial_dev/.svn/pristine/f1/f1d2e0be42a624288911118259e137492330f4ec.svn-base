@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="315.5dp"
+    android:layout_height="wrap_content" >
+
+    <!-- 内部包含图片View -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="294dp"
+        android:layout_height="@dimen/activity_dialog_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <WebView
+            android:id="@+id/title_imag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/look_detail_view"
+        android:layout_width="294dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_new_activity_drawable"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/icon_point_arrow"
+        android:gravity="right|center_vertical"
+        android:paddingRight="14dp"
+        android:text="@string/look_deatil_info"
+        android:textColor="@color/blue_deep"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/close_view"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icon_new_actiivty_close" />
+
+</RelativeLayout>

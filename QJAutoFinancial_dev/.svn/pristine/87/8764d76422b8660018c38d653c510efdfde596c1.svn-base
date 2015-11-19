@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/tableRow" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/textNormalSmall"
+        android:layout_width="100dip"
+        android:text="基金名称" 
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginLeft="0dip"
+        android:paddingLeft="0dip"
+        />
+
+    <TextView
+        android:id="@+id/tv_share"
+        style="@style/textNormalSmall"
+        android:layout_width="100dip"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_status"
+        style="@style/textNormalSmall"
+        android:layout_width="100dip"
+        android:gravity="center"
+        android:text="状态" />
+
+</LinearLayout>

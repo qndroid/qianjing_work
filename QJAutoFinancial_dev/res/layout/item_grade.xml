@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain">
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="12dp">
+        
+        <LinearLayout
+            android:id="@+id/ll_rank"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:id="@+id/tv_rank_num"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/grey_deep_txt"
+                android:text="31"/>
+            
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/grey_deep_txt"
+                android:text="/"/>
+            
+            <TextView
+                android:id="@+id/tv_rank_total"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/grey_deep_txt"
+                android:text="1000"/>
+            
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/ll_rank"
+            android:textColor="@color/grey_deep_txt"
+            android:text="今年同类排名"/>
+		
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="@style/RatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:numStars="5" />
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ratingBar1"
+            android:orientation="horizontal">
+            
+            
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/grey_deep_txt"
+            android:layout_gravity="center_vertical"
+            android:text="辰星评级"/>
+        
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/info"/>
+            
+        </LinearLayout>
+        
+        
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/sharp_dash_line"/>
+    
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:textSize="15sp"
+        android:textColor="@color/blue_deep_grey"
+        android:text="推荐理由"/>
+    
+    <TextView
+        android:id="@+id/tv_advice_reason"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/grey_deep_txt"
+        android:text="推荐理由推荐理由推荐理由推荐理由推荐理由推荐理由推荐理由推荐理由推荐理由推荐理由推荐理由推荐理由推荐理由"/>
+    
+
+</LinearLayout>

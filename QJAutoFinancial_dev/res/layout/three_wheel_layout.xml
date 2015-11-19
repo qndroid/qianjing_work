@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/rl_wheel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wheel_title_bg" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wheel_button_selector"
+            android:text="取消"
+            android:textColor="@drawable/white" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wheel_button_selector"
+            android:text="确定"
+            android:textColor="@drawable/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_below="@id/rl_wheel"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/wheel_shape"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingTop="20dip" >
+
+        <com.qianjing.finance.widget.wheelview.WheelView
+            android:id="@+id/wv_left"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_below="@id/rl_wheel" />
+
+</RelativeLayout>

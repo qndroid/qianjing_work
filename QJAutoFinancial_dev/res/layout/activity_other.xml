@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/about_logo" />
+    </LinearLayout>
+
+    <ScrollView style="@style/scroll" >
+
+        <LinearLayout style="@style/linear" >
+
+            <View style="@style/viewLineTop" />
+
+            <LinearLayout
+                style="@style/linear"
+                android:background="@drawable/white" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_update"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="检查更新" />
+
+                    <ImageView
+                        android:id="@+id/iv_rightarrow"
+                        style="@style/imageRight"
+                        android:src="@drawable/img_right_arrow2" />
+
+                    <TextView
+                        android:id="@+id/tv_updatetext"
+                        style="@style/textNormal"
+                        android:layout_toLeftOf="@id/iv_rightarrow"
+                        android:paddingLeft="0dip"
+                        android:paddingRight="10dip" />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_version"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="版本说明" />
+
+                    <ImageView
+                        style="@style/imageRight"
+                        android:src="@drawable/img_right_arrow2" />
+                </RelativeLayout>
+
+                <View style="@style/viewLineMiddle" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_feedback"
+                    style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="用户反馈" />
+
+                    <ImageView
+                        style="@style/imageRight"
+                        android:src="@drawable/img_right_arrow2" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/viewLine" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

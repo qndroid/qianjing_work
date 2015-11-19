@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qianjing="http://schemas.android.com/apk/res/com.qjautofinancial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <com.qianjing.finance.view.custom.HistoryPopupowItem
+        android:id="@+id/hpi_popup_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qianjing:src="@drawable/history_assemble"
+        qianjing:text="组合交易记录"
+        qianjing:checked="true"/>
+    
+    <View 
+        style="@style/viewLineMiddle"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="48dp"/>
+    
+    <com.qianjing.finance.view.custom.HistoryPopupowItem
+        android:id="@+id/hpi_popup_item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qianjing:src="@drawable/history_fund"
+        qianjing:text="基金交易记录"
+        qianjing:checked="false"/>
+    
+    <View 
+        style="@style/viewLineMiddle"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="48dp"/>
+    
+    <com.qianjing.finance.view.custom.HistoryPopupowItem
+        android:id="@+id/hpi_popup_item3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qianjing:src="@drawable/history_wallet"
+        qianjing:text="活期宝交易记录"
+        qianjing:checked="false"/>
+    
+   	<View
+   	    android:id="@+id/v_hide_view"
+        style="@style/viewLineMiddle"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="48dp"
+        android:visibility="gone"/>
+    
+    <com.qianjing.finance.view.custom.HistoryPopupowItem
+        android:id="@+id/hpi_popup_item4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        qianjing:src="@drawable/icon_history_p2p"
+        qianjing:text="定存交易记录"
+        qianjing:checked="false"
+        android:visibility="gone"/>
+   
+</LinearLayout>

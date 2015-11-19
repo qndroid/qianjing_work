@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_main"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <com.qianjing.finance.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/ptrflv_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/in_default_page"
+        layout="@layout/default_page" />
+
+</LinearLayout>

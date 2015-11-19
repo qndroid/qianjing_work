@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout style="@style/relative" >
+
+        <TextView
+            android:id="@+id/tv_age"
+            style="@style/textNormal"
+            android:text="我的年龄" />
+
+        <TextView
+            android:id="@+id/et_age_label"
+            style="@style/textNormalRight"
+            android:text="岁" />
+
+        <EditText
+            android:id="@+id/et_age"
+            style="@style/editRightNumber"
+            android:layout_toLeftOf="@id/et_age_label"
+            android:layout_toRightOf="@id/tv_age"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/relative" >
+
+        <TextView
+            android:id="@+id/tv_current"
+            style="@style/textNormal"
+            android:text="我当前可以投入多少钱？" />
+
+        <TextView
+            android:id="@+id/et_current_label"
+            style="@style/textNormalRight"
+            android:text="元" />
+
+        <EditText
+            android:id="@+id/et_current"
+            style="@style/editRightDemical"
+            android:layout_toLeftOf="@id/et_current_label"
+            android:layout_toRightOf="@id/tv_current"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/relative" >
+
+        <TextView
+            android:id="@+id/tv_every"
+            style="@style/textNormal"
+            android:text="每月准备拿出多少钱？" />
+
+        <TextView
+            android:id="@+id/et_every_label"
+            style="@style/textNormalRight"
+            android:text="元" />
+
+        <EditText
+            android:id="@+id/et_every"
+            style="@style/editRightDemical"
+            android:layout_toLeftOf="@id/et_every_label"
+            android:layout_toRightOf="@id/tv_every"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/relative" >
+
+        <TextView
+            android:id="@+id/tv_retire_age"
+            style="@style/textNormal"
+            android:text="我的退休年龄" />
+
+        <TextView
+            android:id="@+id/tv_retire_age_label"
+            style="@style/textNormalRight"
+            android:text="岁" />
+
+        <EditText
+            android:id="@+id/et_retire_age"
+            style="@style/editRightNumber"
+            android:layout_toLeftOf="@id/tv_retire_age_label"
+            android:layout_toRightOf="@id/tv_retire_age"
+            android:text="60" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/btnNormal"
+        android:text="@string/BTN_SUBMIT" />
+
+</LinearLayout>

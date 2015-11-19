@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        style="@style/linear"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip" >
+
+        <LinearLayout
+            android:id="@+id/linear_left"
+            style="@style/linear"
+            android:layout_width="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/textNormalSmall" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/textNormalSmall"
+                android:paddingTop="5dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img"
+            style="@style/imageRight"
+            android:src="@drawable/img_right_arrow2" />
+
+        <LinearLayout
+            style="@style/linear"
+            android:layout_width="120dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:layout_toLeftOf="@id/img" >
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/textNormalSmall" />
+
+            <TextView
+                android:id="@+id/tv_value"
+                style="@style/textNormalSmall"
+                android:paddingTop="5dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/viewLineMargin"
+        android:layout_height="0.1dp" />
+
+</LinearLayout>

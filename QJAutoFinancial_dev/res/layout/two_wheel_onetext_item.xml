@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="33dip"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="2dip" >
+
+    <TextView
+        android:id="@+id/tv_wv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="10dip"
+        android:paddingRight="0dip"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

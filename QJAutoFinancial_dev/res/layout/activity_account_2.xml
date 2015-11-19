@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_efeff4"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <com.qianjing.finance.view.custom.VIPFreeScrollView
+        android:id="@+id/pull_to_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/qucik_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_member"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:background="@drawable/bg_account" >
+
+                <TextView
+                    android:id="@+id/tv_member_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_arrow_new_right"
+                    android:text="VIP会员"
+                    android:textColor="@color/color_8fa5bc"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_member_level"
+                    android:layout_centerHorizontal="true"
+                    android:text="zhangliang"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_member_name"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_invite_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/visit_code_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/setting_link"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/visit_code_view"
+                        android:text="@string/my_visit_code"
+                        android:textColor="@color/grey_deep_txt"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/low_stroke" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_conpons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/you_hui_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/setting_discount"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/you_hui_view"
+                        android:text="@string/my_discount_code"
+                        android:textColor="@color/grey_deep_txt"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/low_stroke" />
+
+            <RelativeLayout
+                android:id="@+id/rl_account"
+                android:layout_width="match_parent"
+                android:layout_height="56dp	"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/icon_user_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/setting_usercard" />
+
+                <TextView
+                    android:id="@+id/user_msg_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/icon_user_msg"
+                    android:text="@string/my_message"
+                    android:textColor="@color/grey_deep_txt"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/img_right_arrow2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@id/user_msg_view"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/low_stroke" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_card"
+                android:layout_width="match_parent"
+                android:layout_height="56dp	"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/icon_card_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/setting_creditcard" />
+
+                <TextView
+                    android:id="@+id/card_msg_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/icon_card_msg"
+                    android:text="@string/my_card_message"
+                    android:textColor="@color/grey_deep_txt"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/img_right_arrow2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@id/card_msg_view"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/low_stroke" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pass"
+                android:layout_width="match_parent"
+                android:layout_height="56dp	"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/icon_passwd_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/setting_usercard" />
+
+                <TextView
+                    android:id="@+id/passwd_msg_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/icon_passwd_msg"
+                    android:text="@string/my_pwd_message"
+                    android:textColor="@color/grey_deep_txt"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/img_right_arrow2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/low_stroke" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_us"
+                android:layout_width="match_parent"
+                android:layout_height="56dp	"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/icon_about_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/setting_users" />
+
+                <TextView
+                    android:id="@+id/about_us_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/icon_about_us"
+                    android:text="@string/my_about_us"
+                    android:textColor="@color/grey_deep_txt"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/img_right_arrow2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@id/about_us_view"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/low_stroke" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_set"
+                android:layout_width="match_parent"
+                android:layout_height="56dp	"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/icon_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/setting_paragraph" />
+
+                <TextView
+                    android:id="@+id/other_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/icon_other"
+                    android:text="@string/my_other_msg"
+                    android:textColor="@color/grey_deep_txt"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/img_right_arrow2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/low_stroke" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/icon_phone"
+                android:text="@string/my_phone"
+                android:textColor="@color/color_b6b6b6"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/my_service"
+                android:textColor="@color/color_b6b6b6"
+                android:textSize="15sp" />
+
+            <!-- 底栏高度补充 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/radio_button_height" />
+        </LinearLayout>
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+
+</LinearLayout>

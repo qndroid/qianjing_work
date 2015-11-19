@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_main"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:id="@+id/title_middle_text"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="验证手机号"
+            android:textColor="@drawable/title_text_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_back"
+            style="@style/imageNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/title_left_but"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="3dip"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_prompt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="绑定银行卡需要短信确认。"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码已发送至手机:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=",请按提示进行操作"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout style="@style/relativeNormal" >
+
+            <Button
+                android:id="@+id/bt_getcode"
+                style="@style/btnShort"
+                android:background="@drawable/btn_orangenormal_selector" />
+
+            <EditText
+                android:id="@+id/et_code"
+                style="@style/editFullWidth"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:layout_toLeftOf="@id/bt_getcode"
+                android:hint="请输入验证码"
+                android:maxLines="1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_next"
+        style="@style/btnNormal"
+        android:text="下一步" />
+
+    <TextView
+        android:id="@+id/tv_not_receive"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="收不到验证码？"
+        android:textColor="#000000" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e8e8e8"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <TableLayout
+        style="@style/table"
+        android:layout_marginTop="20dip" >
+
+        <TableRow style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:layout_marginRight="10dip"
+                android:text="账号" />
+
+            <EditText
+                android:id="@+id/User_Num"
+                style="@style/editNormal"
+                android:hint="必填"
+                android:inputType="number"
+                android:maxLength="11" />
+        </TableRow>
+
+        <View style="@style/viewLine" />
+
+        <TableRow style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:layout_marginRight="10dip"
+                android:text="密码" />
+
+            <EditText
+                android:id="@+id/User_Pass"
+                style="@style/editNormal"
+                android:hint="必填"
+                android:inputType="textPassword"
+                android:maxLength="18" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/btnNormal"
+        android:text="登录" />
+
+    <View
+        style="@style/viewLine"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="25dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dip"
+        android:background="#00000000"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/ButRegi"
+            style="@style/btnNormalGray"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/ButPassReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dip"
+            android:background="#00000000"
+            android:text="忘记密码？"
+            android:textColor="#2e54f7"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom" >
+
+            <Button
+                android:id="@+id/ButConn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dip"
+                android:background="#00000000"
+                android:text="联系我们"
+                android:textColor="#2e54f7"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

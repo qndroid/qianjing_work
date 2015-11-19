@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_assets"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <include
+        android:id="@+id/in_balance_enter"
+        layout="@layout/include_assets_blanace"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_update_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="20dp"
+                    android:text="00-00 00:00 ,下次更新:00-00 00:00"
+                    android:textColor="@color/assets_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="12dp"
+                    android:text="近一个月资产走势"
+                    android:textColor="@color/assets_text" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.qianjing.finance.view.chartview.ChartBackground
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/lc_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="264dp"
+                        android:layout_marginTop="12dp"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="--"
+                        android:textColor="@color/assets_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:text="--"
+                        android:textColor="@color/assets_text"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_total_assets"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_total_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="总资产(元)"
+                                android:textColor="@color/assets_text"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_assets_total_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="--.--"
+                                android:textColor="@color/white"
+                                android:textSize="33sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            style="@style/viewVertical"
+                            android:layout_width="0.1dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/assets_text" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_total_profit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_cumulative_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="累计盈亏(元)"
+                                android:textColor="@color/assets_text"
+                                android:textSize="15sp" />
+							
+                            <TextView
+                                android:id="@+id/tv_assets_cumulative_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@+id/tv_cumulative_title"
+                                android:text="--.--"
+                                android:textColor="#ffffffff"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_purching"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="16dp"
+                    android:text="申购中"
+                    android:textColor="@color/assets_text"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <include layout="@layout/fragment_asset_footer" />
+
+                <View
+                    android:id="@+id/divider_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/low_stroke" />
+
+                <!-- 底栏高度补充 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/radio_button_height" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

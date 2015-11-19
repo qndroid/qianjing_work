@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="cp_idtype">
+        <item>身份证</item>
+        <item>军官证</item>
+        <item>护照</item>
+        <item>户口簿</item>
+        <item>回乡证</item>
+        <item>其他证件</item>
+    </string-array>
+    <string-array name="merried">
+        <item>未婚</item>
+        <item>已婚</item>
+        <item>未填写</item>
+    </string-array>
+    <string-array name="edutcation">
+        <item>未填写</item>
+        <item>初中及以下</item>
+        <item>高中/中专</item>
+        <item>大专/本科</item>
+        <item>硕士以上</item>
+    </string-array>
+    <string-array name="invest">
+        <item>有</item>
+        <item>无</item>
+        <item>未填写</item>
+    </string-array>
+    <string-array name="work">
+        <item>未填写</item>
+        <item>政府部门</item>
+        <item>教科文</item>
+        <item>金融</item>
+        <item>商贸</item>
+        <item>房地产</item>
+        <item>制造业</item>
+        <item>自由职业</item>
+        <item>自由职业</item>
+        <item>其他</item>
+        <item>事业单位</item>
+        <item>国有企业</item>
+    </string-array>
+    <string-array name="fund_type">
+        <item>股票型</item>
+        <item>债券型</item>
+        <item>货币型</item>
+        <item>混合型</item>
+        <item>ETF</item>
+        <item>QDII</item>
+    </string-array>
+    <string-array name="bank_name">
+        <item>工商银行</item>
+        <item>光大银行</item>
+        <item>广发银行</item>
+        <item>建设银行</item>
+        <item>交通银行</item>
+        <item>民生银行</item>
+        <item>农业银行</item>
+        <item>兴业银行</item>
+        <item>邮政储蓄</item>
+        <item>招商银行</item>
+        <item>中国银行</item>
+        <item>中信银行</item>
+        <item>华夏银行</item>
+        <item>北京银行</item>
+        <item>浦发银行</item>
+    </string-array>
+
+    <array name="bank_image">
+        <item>@drawable/gongshang</item>
+        <item>@drawable/guangda</item>
+        <item>@drawable/guangfa</item>
+        <item>@drawable/jianhang</item>
+        <item>@drawable/jiaotong</item>
+        <item>@drawable/minsheng</item>
+        <item>@drawable/nonghang</item>
+        <item>@drawable/xingye</item>
+        <item>@drawable/youzheng</item>
+        <item>@drawable/zhaoshang</item>
+        <item>@drawable/zhongguo</item>
+        <item>@drawable/zhongxin</item>
+        <item>@drawable/huaxia</item>
+        <item>@drawable/beijing</item>
+        <item>@drawable/pufa</item>
+        <item>@drawable/defult </item>
+    </array>
+
+    <string-array name="fund_all_type">
+        <item>全部</item>
+        <item>货币型</item>
+        <item>股票型</item>
+        <item>债券型</item>
+        <item>混合型</item>
+        <item>ETF</item>
+        <item>QDII</item>
+    </string-array>
+
+</resources>

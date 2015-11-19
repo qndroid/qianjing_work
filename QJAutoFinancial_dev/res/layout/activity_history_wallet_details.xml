@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain">
+    
+    <include 
+        layout="@layout/include_title"/>"
+    
+    <FrameLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    
+   	<com.qianjing.finance.view.custom.VIPFreeScrollView 
+   	    android:layout_height="match_parent"
+   	    android:layout_width="match_parent"
+   	    android:scrollbars="none">
+        
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    
+    <View
+        android:layout_height="14dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"/>
+    
+    
+    
+    <RelativeLayout 
+        android:layout_height="126dp"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:background="@color/white">
+        
+        <ImageView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bitmap_dot_line"/>
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                
+                <TextView
+                    android:id="@+id/tv_wallet_value_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#4f5464"
+                    android:text="充值金额"/>
+                
+                <TextView
+                    android:id="@+id/tv_wallet_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#4f5464"
+                    android:text="--"/>
+                
+                
+            </RelativeLayout>
+            
+            
+            
+        </LinearLayout>
+        
+    <ImageView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bitmap_dot_line"/>
+        
+    </RelativeLayout>
+    
+    
+    
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@@@ -->
+    
+    <RelativeLayout 
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="#f9fafd">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_common1"
+            android:textColor="#4f5464"
+            android:layout_marginLeft="12dp"
+            android:text="产品名称"/>
+        
+        <TextView
+            android:id="@+id/tv_wallet_name" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#4f5464"
+            android:layout_marginRight="12dp"
+            android:text="--"/>
+        
+        
+    </RelativeLayout>
+    
+    <View 
+        style="@style/viewLine"
+        android:layout_height="0.1dp"/>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:orientation="vertical">
+    
+    <View 
+        android:layout_height="8dp"
+        android:layout_width="match_parent"/>
+    
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_common1"
+            android:textColor="@color/text_common1"
+            android:text="交易类型"/>
+        
+        <TextView
+            android:id="@+id/tv_wallet_type"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_common1"
+            android:textColor="@color/text_common2"
+            android:text="--"/>
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_common1"
+            android:textColor="@color/text_common1"
+            android:text="交易时间"/>
+        
+        <TextView
+            android:id="@+id/tv_wallet_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_common1"
+            android:textColor="@color/text_common2"
+            android:text="--"/>
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_common1"
+            android:textColor="@color/text_common1"
+            android:text="交易方式"/>
+        
+        <TextView
+            android:id="@+id/tv_wallet_bank" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_common1"
+            android:textColor="@color/text_common2"
+            android:text="--"/>
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_arrive_item"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        
+        <TextView
+            android:id="@+id/tv_wallet_arrive_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_common1"
+            android:textColor="@color/text_common1"
+            android:text=""/>
+        
+        <TextView
+            android:id="@+id/tv_wallet_arrive_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_common1"
+            android:textColor="@color/text_common2"
+            android:text="--"/>
+        
+        
+    </RelativeLayout>
+    
+    
+    
+    <View 
+        style="@style/viewLine"/>
+    
+    <View 
+        android:layout_height="52dp"
+        android:layout_width="match_parent"/>
+    
+    <View 
+        android:layout_height="14dp"
+        android:layout_width="match_parent"/>
+    
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dot_line2"/>
+
+ 
+    
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@分隔线@@@@@@@@@@@@@@@@@@@@@@@ -->
+    
+    <View
+        android:layout_height="68dp"
+        android:layout_width="match_parent"/>
+    
+    	</LinearLayout>
+    	</com.qianjing.finance.view.custom.VIPFreeScrollView>
+    	
+   	
+   	    
+   	    <RelativeLayout 
+   	    android:layout_height="68dp"
+   	    android:layout_width="match_parent"
+   	    android:layout_gravity="bottom"
+   	    android:background="#ccffffff">
+   	    
+   	    <View
+   	        style="@style/viewLine"
+   	        android:layout_alignParentTop="true"/>
+   	        
+   	    <LinearLayout
+   	        android:layout_height="wrap_content"
+   	        android:layout_width="wrap_content"
+   	        android:layout_centerInParent="true"
+   	        android:orientation="horizontal">
+   	        
+   	        <ImageView
+   	            android:id="@+id/iv_state_icon"
+   	            android:layout_height="wrap_content"
+   	            android:layout_width="wrap_content"
+   	            android:layout_gravity="center_vertical"/>
+   	        
+   	        <TextView
+   	            android:id="@+id/tv_state_text"
+   	            android:layout_height="wrap_content"
+   	            android:layout_width="wrap_content"
+   	            android:layout_marginLeft="8dp"
+   	            android:layout_gravity="center_vertical"
+   	            android:textSize="20sp"
+   	            android:textColor="#ff3b3b"
+   	            android:text=""/>
+   	        
+   	    </LinearLayout>
+   	    
+   		</RelativeLayout>
+   	    
+   	
+   	
+    </FrameLayout>
+    
+</LinearLayout>

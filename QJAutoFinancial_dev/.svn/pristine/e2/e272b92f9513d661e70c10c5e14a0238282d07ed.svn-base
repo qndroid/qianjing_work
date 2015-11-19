@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    
+    <RelativeLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent">
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        
+     <TextView
+        android:id="@+id/tv_history_item_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="--"/>
+    
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp"
+        android:textColor="#66000000"
+        android:text="--"/>
+        
+        
+   </LinearLayout>
+    
+    
+   <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/iv_arrow"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        
+       <TextView
+        android:id="@+id/tv_operation_value"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="right"
+        android:textColor="#66000000"
+        android:text="--"/>
+    
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_gravity="right"
+        android:textColor="#aa000000"
+        android:text="申购中"/>
+        
+    </LinearLayout>
+    
+    
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/img_right_arrow2"/>
+    
+    <View
+        style="@style/viewLineMiddle"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"/>
+    
+	</RelativeLayout>
+    
+</RelativeLayout>

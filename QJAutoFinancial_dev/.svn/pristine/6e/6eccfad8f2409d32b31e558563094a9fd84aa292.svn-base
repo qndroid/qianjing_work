@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注册第二步 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView style="@style/scroll" >
+
+        <LinearLayout style="@style/linear" >
+
+            <RelativeLayout style="@style/relativeNormal" >
+
+                <Button
+                    android:id="@+id/But_send"
+                    style="@style/btnShort" />
+
+                <EditText
+                    android:id="@+id/Sign_code"
+                    style="@style/editFullWidth"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dip"
+                    android:layout_toLeftOf="@id/But_send"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/Set_pass"
+                style="@style/editFullWidth"
+                android:hint="@string/PassMSGinf"
+                android:maxLength="18"
+                android:password="true" />
+
+            <CheckBox
+                android:id="@+id/check"
+                style="@style/checkTextNormal"
+                android:checked="false"
+                android:text="显示密码" />
+
+            <TextView
+                style="@style/textPS"
+                android:text="@string/XML_PASS_MIND"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/But_Reg"
+                style="@style/btnNormal"
+                android:text="注册" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

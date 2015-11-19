@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/layout_main"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="318dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_card" >
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_unbound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="0dp"
+                android:paddingRight="15dp"
+                android:paddingTop="12dp"
+                android:text="解绑"
+                android:textColor="@drawable/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp" >
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="51dip"
+                android:layout_height="51dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:src="@drawable/defult" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_bank_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dip"
+                    android:text="----银行"
+                    android:textColor="@color/text_common2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_card_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:paddingTop="5dip"
+                    android:text="基金专用"
+                    android:textColor="@color/red_VI"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_2"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="****  ****  ****  "
+                android:textColor="@color/text_common2"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_card_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8888"
+                android:textColor="@color/text_common2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_3"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_master_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingTop="2dp"
+                android:text="方衍"
+                android:textColor="@color/text_common2"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_card_auth" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

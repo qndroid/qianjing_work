@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+    <!-- 交易记录为空时的界面-->
+    
+    <include
+        android:id="@+id/in_history_enter"
+        android:visibility="gone"
+        layout="@layout/item_history_enter"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="363dp"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/iv_deault_page_pic"
+        android:layout_height="138dp"
+        android:layout_width="120dp"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/img_fund_empty"/>
+    
+    
+    <TextView
+        android:id="@+id/tv_deault_page_text"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:text="@string/empty_fund_history"/>
+    
+    </LinearLayout>
+    
+    <!-- 网络连接不上时的界面 -->
+</FrameLayout>

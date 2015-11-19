@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_fund_drawable" >
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/money_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/statue_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:maxLines="2"
+        android:maxWidth="100dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/grey_deep_txt"
+        android:textSize="15sp" />
+
+</RelativeLayout>

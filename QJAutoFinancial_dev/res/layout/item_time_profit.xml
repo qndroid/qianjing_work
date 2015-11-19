@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="3dp" >
+
+    <TextView
+        android:id="@+id/productname_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:maxLines="2"
+        android:maxWidth="100dp"
+        android:textColor="@color/blue_deep_grey"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/leiji_profit_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/productname_view"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue_deep_grey"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/daishou_profit_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/productname_view"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/blue_deep_grey"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/repay_info_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/productname_view"
+        android:layout_below="@id/productname_view"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_repay_info"
+        android:textColor="@color/blue_light_grey"
+        android:textSize="14sp" />
+
+</RelativeLayout>

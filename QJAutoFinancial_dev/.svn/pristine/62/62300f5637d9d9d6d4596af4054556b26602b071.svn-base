@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+    <RelativeLayout 
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_main">
+    <com.qianjing.finance.view.indictorview.IndiactorView
+                android:id="@+id/iv_indictor_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+    
+    </RelativeLayout>
+    
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_setting_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+            
+        </LinearLayout>
+
+     
+     	<com.qianjing.finance.view.chartview.PieGraph
+                android:id="@+id/pg_pie_graph"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@color/white" />
+
+     	
+     	<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/ji_jin_ming_cheng"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/zhan_bi"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+     	
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_cccccc" />
+
+        <LinearLayout
+            android:id="@+id/ll_content" 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            
+        </LinearLayout>
+        <!-- <ListView
+            android:id="@+id/fund_detail_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:cacheColorHint="@color/color_00000000"
+            android:divider="@color/color_cccccc"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"
+            android:scrollingCache="false" /> -->
+    
+
+</LinearLayout>

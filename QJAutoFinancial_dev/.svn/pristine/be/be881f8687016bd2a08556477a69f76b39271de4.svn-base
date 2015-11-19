@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    style="@style/layoutMain" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <include 
+        layout="@layout/include_title"/>
+    
+    
+<com.qianjing.finance.view.custom.VIPFreeScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="none">
+
+    
+    
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    
+    
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            
+            <!-- AAAAAAAAAAAAAAAAAA -->
+            
+            <LinearLayout 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/tv_date_redeem"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:text="2010"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/sharp_oval_deep"/>
+                
+                <LinearLayout 
+                    android:layout_height="match_parent"
+                    android:layout_width="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+                    
+                    <View
+                        android:layout_height="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/blue_deep_grey"/>
+                    
+                    <View 
+                        android:layout_height="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/blue_light_grey"/>
+                    
+                </LinearLayout>
+                
+                
+            </LinearLayout>
+            
+            <!-- AAAAAAAAAAAAAAAAAA -->
+            
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                
+                <TextView
+                	android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+               		android:layout_marginLeft="12dp"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="发起赎回"/>
+                
+                <TextView
+                    android:id="@+id/tv_redeem_item"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                	android:layout_marginLeft="12dp"
+                    android:textColor="@color/blue_deep_grey"
+                    android:text="@string/balance_redeem_reuslt"/>
+                
+                <LinearLayout
+                    android:id="@+id/ll_redeem_content"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rect_rebalance_result"
+                    android:padding="12dp">
+                    
+                    
+               </LinearLayout>
+                
+                <View 
+                    android:layout_height="10dp"
+                    android:layout_width="match_parent"/>
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            
+            <!-- AAAAAAAAAAAAAAAAAA -->
+            
+            <LinearLayout 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/tv_date_purchase"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:text="2010"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/sharp_oval_light"/>
+                
+                
+                    
+                    <View
+                    	android:layout_height="match_parent"
+                    	android:layout_width="5dp"
+                    	android:layout_gravity="center_horizontal"
+                        android:background="@color/blue_light_grey"/>
+                    
+                
+                
+            </LinearLayout>
+            
+            <!-- AAAAAAAAAAAAAAAAAA -->
+            
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                
+                <TextView
+                	android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+               		android:layout_marginLeft="12dp"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="申购"/>
+                
+                <TextView
+                    android:id="@+id/tv_purchase_item"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                	android:layout_marginLeft="12dp"
+                    android:textColor="@color/blue_deep_grey"
+                    android:text="@string/balance_purchase_reuslt"/>
+                
+                <LinearLayout
+                    android:id="@+id/ll_purchase_content"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rect_rebalance_result"
+                    android:padding="12dp">
+                    
+                   
+                    
+                    
+               </LinearLayout>
+                
+                <View 
+                    android:layout_height="10dp"
+                    android:layout_width="match_parent"/>
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            
+            <!-- AAAAAAAAAAAAAAAAAA -->
+            
+            
+                
+                <TextView
+                    android:id="@+id/tv_date_completed"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:text="2010"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/sharp_oval_light"/>
+                
+                
+                
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+               		android:layout_marginLeft="12dp"
+               		android:layout_gravity="center_vertical"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="再平衡完成"/>
+                
+                
+                    
+                
+                
+        </LinearLayout>
+        
+        
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="12dp">
+        
+        <TextView
+        android:id="@+id/tv_advice"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/balance_result_advice"
+        android:textColor="@color/grey_middle_txt"/>
+    
+    	
+        
+        
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_height="30dp"
+        android:layout_width="match_parent"/>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+        	android:textColor="@color/grey_middle_txt"
+            android:text="如有疑问请联系我们:"/>
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+        	android:textColor="@color/grey_middle_txt"
+            android:text="400-893-68885"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_height="20dp"
+        android:layout_width="match_parent"/>
+    
+</LinearLayout>
+</com.qianjing.finance.view.custom.VIPFreeScrollView>
+</LinearLayout>

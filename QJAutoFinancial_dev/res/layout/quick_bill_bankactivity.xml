@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 绑卡 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/layout_main" >
+
+    <include 
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ListView
+        android:paddingTop="20dp"
+        android:dividerHeight="1dp"
+        android:divider="@drawable/gray"
+        android:layout_below="@id/title"
+        android:id="@+id/lv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+    </ListView>
+
+</RelativeLayout>

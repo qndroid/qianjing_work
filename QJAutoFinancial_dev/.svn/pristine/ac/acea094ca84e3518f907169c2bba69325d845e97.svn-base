@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+
+    <ScrollView style="@style/scroll" >
+
+        <LinearLayout style="@style/linear" >
+
+            <LinearLayout style="@style/linearWhite" >
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="基金名称" />
+
+                    <TextView
+                        style="@style/textNormalRight"
+                        android:text="投资金额" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/viewLine"
+                    android:layout_marginLeft="10dip" />
+
+                <ListView
+                    android:id="@+id/lv"
+                    style="@style/listFund" />
+
+                <View style="@style/viewLine" />
+            </LinearLayout>
+
+<!--             <LinearLayout style="@style/linearWhite" >
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="分红方式" />
+
+                    <TextView
+                        style="@style/textNormalRight"
+                        android:text="红利转投" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+            </LinearLayout> -->
+
+            <LinearLayout style="@style/linearWhite" >
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout style="@style/tableRow" >
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:text="总投资金额" />
+
+                    <EditText
+                        android:id="@+id/et_sum"
+                        style="@style/editRightDemical"
+                        
+                        android:text="0" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/btnNormal"
+                android:text="@string/BTN_NEXT" />
+            <TextView
+                android:id="@+id/tv_min"
+                style="@style/textPS"
+                android:text="注：经测算改组合最低申购金额为155元，请确保银行卡中有足够余额，否则会导致组合偏差。" />
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="34dp"
+     android:layout_width="match_parent"
+     android:orientation="horizontal">
+            
+ 			<RelativeLayout
+ 			    android:id="@+id/rl_balance_item1" 
+                android:layout_height="34dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+     			android:layout_marginLeft="12dp"
+        		android:layout_gravity="center_vertical">
+ 			    
+ 			  <ImageView
+                android:id="@+id/tv_balance_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        		android:background="@drawable/balance_purchase"/>
+ 			    
+ 			</RelativeLayout>
+            
+            
+            <TextView
+                android:id="@+id/tv_balance_item2" 
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+        		android:layout_gravity="center_vertical"
+            	android:textSize="@dimen/text_balance_item_common"
+        		android:textColor="@color/text_common2"
+                android:text="市值占比"/>
+            
+            <TextView
+                android:id="@+id/tv_balance_item3" 
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="right"
+        		android:layout_gravity="center_vertical"
+     			android:layout_marginRight="12dp"
+            	android:textSize="@dimen/text_balance_item_common"
+        		android:textColor="@color/text_common2"
+                android:text="持仓份额"/>
+         
+
+</LinearLayout>

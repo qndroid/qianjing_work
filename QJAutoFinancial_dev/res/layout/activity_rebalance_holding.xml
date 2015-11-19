@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/layoutMain">
+	
+    <include 
+        layout="@layout/include_title"/>"
+    
+    <com.qianjing.finance.view.custom.VIPFreeScrollView 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none">
+        
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            
+            
+        
+    
+    <RelativeLayout 
+        android:layout_height="22dp"
+        android:layout_width="match_parent"
+        android:background="#9fa8b7">
+        
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginLeft="12dp"
+             android:layout_centerVertical="true"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+            
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/rebalance_before_holding"/>
+            
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="11sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:text="@string/rebalance_before_holding"/>
+            
+            <TextView
+                android:id="@+id/tv_before_time"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:text="(2015)"/>
+            
+        </LinearLayout>
+    </RelativeLayout>
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/ll_before_holding"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+        		android:textSize="12sp"
+        		android:textColor="@color/grey_low_txt"
+                android:text="@string/fund_name"/>
+            
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+        		android:textSize="12sp"
+        		android:textColor="@color/grey_low_txt"
+                android:text="@string/market_value_bi"/>
+            
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="right"
+        		android:textSize="12sp"
+        		android:textColor="@color/grey_low_txt"
+                android:text="@string/holding_bi"/>
+            
+        </LinearLayout>
+        
+        <View 
+            style="@style/viewLine"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+        
+        <View 
+            style="@style/viewLine"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="2dp"/>
+        
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_height="20dp"
+        android:layout_width="match_parent"/>
+    
+    <RelativeLayout
+        android:id="@+id/rl_after_title"
+        android:layout_height="22dp"
+        android:layout_width="match_parent"
+        android:background="#9fa8b7">
+        
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginLeft="12dp"
+             android:layout_centerVertical="true"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+            
+            <ImageView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/rebalance_after_holding"/>
+            
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="11sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:text="@string/rebalance_after_holding"/>
+            
+            <TextView
+                android:id="@+id/tv_after_time"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:text="(2015)"/>
+            
+        </LinearLayout>
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/ll_after_holding"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+        		android:textSize="12sp"
+        		android:textColor="@color/grey_low_txt"
+                android:text="@string/fund_name"/>
+            
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+        		android:textSize="12sp"
+        		android:textColor="@color/grey_low_txt"
+                android:text="@string/market_value_bi"/>
+            
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="right"
+        		android:textSize="12sp"
+        		android:textColor="@color/grey_low_txt"
+                android:text="@string/holding_bi"/>
+            
+        </LinearLayout>
+        
+        <View 
+            style="@style/viewLine"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+        
+        <View
+            style="@style/viewLine"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="2dp"/>
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+        
+        
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+    
+</LinearLayout>

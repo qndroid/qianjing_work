@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" 
+    >
+
+    <include layout="@layout/include_title" />
+
+    <View style="@style/viewLine"
+        android:layout_marginTop="10dip"
+        />
+    <RelativeLayout style="@style/tableRow"
+        android:background="@drawable/white"
+        >
+        <TextView 
+            style="@style/textNormalBlack"
+            android:text="组合名称"
+            />
+        <EditText 
+            android:id="@+id/et_name"
+            style="@style/editNormalRight"
+            />
+    </RelativeLayout>
+    <View style="@style/viewLine"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btnNormal"
+        android:text="@string/BTN_SAVE" />
+
+</LinearLayout>

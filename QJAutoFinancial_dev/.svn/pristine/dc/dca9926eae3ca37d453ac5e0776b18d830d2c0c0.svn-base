@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_efeff4" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <com.qianjing.finance.view.custom.VIPFreeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/shape_timing_modify_bg"
+                android:paddingBottom="22dp" >
+
+                <TextView
+                    android:id="@+id/timing_charge_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/timing_charge_way"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_charge_way_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_charge_way"
+                    android:layout_toRightOf="@id/timing_charge_way"
+                    android:text="前端收费"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timing_paid_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_charge_way"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_paid_way"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_paid_way_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_paid_way"
+                    android:layout_toRightOf="@id/timing_paid_way"
+                    android:text="协议代扣款"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timing_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_paid_way"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_card_number"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_card_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_card"
+                    android:layout_toRightOf="@id/timing_card"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timing_once_investment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_card"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_once_investment"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_once_investment_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_once_investment"
+                    android:layout_toRightOf="@id/timing_once_investment"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timing_modify_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_once_investment"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_modify_repeat"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_repeat_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_modify_repeat"
+                    android:layout_toRightOf="@id/timing_modify_repeat"
+                    android:text="每月"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timing_modify_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_modify_repeat"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_modify_time_two"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_modify_date"
+                    android:layout_toRightOf="@id/timing_modify_date"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timing_stop_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_modify_date"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_stop_time_two"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_stop_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/timing_stop_date"
+                    android:layout_toRightOf="@id/timing_stop_date"
+                    android:textColor="@color/blue_deep_grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/status_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="24dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/operation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/modify_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_timing_button_bg"
+                    android:gravity="center"
+                    android:text="@string/timing_modify"
+                    android:textColor="@color/blue_deep"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/modify_pause"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_timing_button_bg"
+                    android:gravity="center"
+                    android:text="@string/timing_pause"
+                    android:textColor="@color/blue_deep"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/modify_abort"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_timing_button_bg"
+                    android:gravity="center"
+                    android:text="@string/timing_abort"
+                    android:textColor="@color/blue_deep"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/timing_detail"
+                android:textColor="@color/grey_deep_txt"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/deep_stroke" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/fund_name"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/timing_money"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/timing_next_paid_money"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_cccccc" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1.5dp"
+                    android:background="@color/color_cccccc" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+
+</RelativeLayout>

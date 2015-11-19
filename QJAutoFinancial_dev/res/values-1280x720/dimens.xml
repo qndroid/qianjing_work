@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- 详情页在平衡入口高度 -->
+    <dimen name="activity_dialog_height">470dp</dimen>
+
+</resources>

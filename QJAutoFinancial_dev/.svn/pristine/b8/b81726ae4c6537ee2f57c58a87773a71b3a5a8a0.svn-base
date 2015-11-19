@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain"
+    android:layout_width="match_parent"
+    android:background="@color/color_grey_light">
+    
+    <View
+        style="@style/viewLine"
+        android:background="@color/white"/>
+    
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/virtual_assets_bg">
+        
+        <LinearLayout 
+            android:layout_height="122dp"
+        	android:layout_width="fill_parent"
+        	android:orientation="vertical"
+        android:gravity="center_vertical">
+        
+       <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+        
+        <ImageView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/my_assets"/>
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+            
+        <TextView
+        android:id="@+id/tv_total_assets"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/assets_total"/>
+        
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:text="(元)"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:textSize="20dp"
+        	android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:text="："/>
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+         <TextView
+            android:id="@+id/tv_virtual_assets_value" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+        	android:textSize="38sp"
+        	android:textStyle="bold"
+            android:text="--.--"/>
+    
+    
+         
+    </LinearLayout>
+    
+   </LinearLayout>
+    
+      <View 
+          style="@style/viewLine"
+          android:background="@color/white"/>
+       
+       <LinearLayout 
+           android:layout_height="72dp"
+           android:layout_width="fill_parent"
+           android:orientation="horizontal">
+           
+           <RelativeLayout 
+               android:layout_height="fill_parent"
+               android:layout_width="0dp"
+               android:layout_weight="1">
+               
+               <LinearLayout 
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="25dp">
+                   
+                   <TextView 
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+          	  			android:textColor="@color/color_yellow"
+          	  			android:textSize="@dimen/yellow_size"
+                       android:text="@string/virtual_total_value"/>
+                   
+                   <TextView 
+                       android:id="@+id/tv_virtual_market_value"
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/yellow_value_size"
+                       android:text="--.--"/>
+                   
+               </LinearLayout>
+               
+               <View 
+                   style="@style/viewVertical"
+                   android:layout_width="0.1dp"
+                   android:layout_height="45dp"
+                   android:layout_centerVertical="true"
+                   android:background="@color/white"
+                   android:layout_alignParentRight="true"/>
+               
+           </RelativeLayout>
+           
+           <RelativeLayout 
+               android:layout_height="fill_parent"
+               android:layout_width="0dp"
+               android:layout_weight="1">
+               
+                <LinearLayout 
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:orientation="vertical">
+                   
+                   <TextView 
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+          	  			android:textColor="@color/color_yellow"
+          	  			android:textSize="@dimen/yellow_size"
+                       android:text="@string/virtual_money_available"/>
+                   
+                   <TextView
+                       android:id="@+id/tv_virtual_avaliable_value"
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:layout_marginTop="6dp"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/yellow_value_size"
+                       android:text="--.--"/>
+                   
+               </LinearLayout>
+               
+           </RelativeLayout>
+           
+           
+       </LinearLayout>
+      
+       </LinearLayout>
+       <View 
+          style="@style/viewLine"
+          android:background="@color/white"/>
+       
+      <LinearLayout 
+          android:layout_height="60dp"
+          android:layout_width="fill_parent"
+          android:orientation="horizontal"
+          android:layout_gravity="center_vertical"
+          android:background="@color/white">
+          
+          <TextView
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_marginLeft="25dp"
+          	  android:layout_gravity="center_vertical"
+          	  android:textColor="@color/color_666666"
+          	  android:textSize="@dimen/yellow_size"
+              android:text="@string/total_profit"/>
+          
+          <TextView
+              android:id="@+id/tv_virtual_profit"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+          	  android:layout_gravity="center_vertical"
+              android:textColor="@color/color_666666"
+              android:textSize="18sp"
+              android:text="--.--"/>
+          
+      </LinearLayout>
+      
+      <View
+          style="@style/viewLine"
+          android:background="@color/color_line"/>
+        
+    
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/rl_history_list"
+        android:layout_marginTop="10dp" 
+        android:layout_height="30dp"
+        android:layout_width="fill_parent">
+        
+        <ImageView
+            android:id="@+id/iv_virtual_assets" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/virtual_assets"/>
+        
+        <TextView
+            android:layout_toRightOf="@+id/iv_virtual_assets"
+            android:layout_toEndOf="@+id/iv_virtual_assets"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@drawable/gray_profit"
+            android:text="@string/title_comb"/>
+        
+        <TextView
+            android:layout_toLeftOf="@+id/iv_arrow_right"
+            android:layout_toStartOf="@+id/iv_arrow_right"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@drawable/gray_profit"
+            android:text="@string/title_fund_history"/>
+        
+        <ImageView
+            android:id="@+id/iv_arrow_right"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_right_arrow2"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>

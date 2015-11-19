@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置 版本说明 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/about_logo" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tv_vcontent"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/shape_white"
+        android:gravity="left|top"
+        android:hint="反馈产品经理"
+        android:lineSpacingMultiplier="1.5"
+        android:maxHeight="200dip"
+        android:minHeight="100dip"
+        android:padding="10dip"
+        android:textColor="@drawable/gray_text"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_sendmsg"
+            android:padding="10dip"
+            android:background="@drawable/btn_normal_selector"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="发送" />
+
+        <Button
+            android:id="@+id/bt_resetmsg"
+            android:padding="10dip"
+            android:background="@drawable/btn_gray_selector"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="重置" />
+    </LinearLayout>
+
+</LinearLayout>

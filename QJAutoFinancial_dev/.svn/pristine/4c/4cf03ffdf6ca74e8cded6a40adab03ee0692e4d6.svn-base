@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_efeff4" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <com.qianjing.finance.view.custom.VIPFreeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="68dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_timing_modify_bg"
+                android:paddingBottom="22dp" >
+
+                <TextView
+                    android:id="@+id/assemble_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/assemble_name"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/assemble_name_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/assemble_name"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grey_deep_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/charge_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/assemble_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/fee_tyle"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/charge_way_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/charge_way"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/qian_duan_shou_fei"
+                    android:textColor="@color/grey_deep_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/paid_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/charge_way"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_paid_way_two"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/paid_way_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/paid_way"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/cut_money_way"
+                    android:textColor="@color/grey_deep_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/paid_way"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_card_number_two"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/card_number_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/card_number"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grey_deep_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_number"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_modify_repeat"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_repeat_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/timing_modify_repeat"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/mei_yue"
+                    android:textColor="@color/orange"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_modify_repeat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_modify_time_two"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_modify_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/timing_modify_date"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/orange"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_modify_date"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_modify_money"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_money_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/timing_money"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/orange"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_next_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timing_money_value"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/timing_next_paid_money"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/timing_next_paid_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/timing_next_paid"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/orange"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/timing_detail"
+                android:textColor="@color/grey_deep_txt"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/deep_stroke" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/fund_name"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/timing_money"
+                    android:textColor="@color/grey_low_txt"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_cccccc" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1.5dp"
+                    android:background="@color/color_cccccc" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </com.qianjing.finance.view.custom.VIPFreeScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#191919"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_information"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/timing_confirm_chnage_info"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/confirm_changed_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/red_VI"
+            android:gravity="center"
+            android:text="@string/timing_confirm_chnage"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

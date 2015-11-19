@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置 用户反馈 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+       android:layout_marginLeft="5dip"
+       android:layout_marginTop="5dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+        <TextView 
+            android:id="@+id/tv_version"
+            style="@style/textNormal"
+            android:layout_marginBottom="10dip"
+            />
+
+        <TextView 
+            android:id="@+id/tv_content"
+            style="@style/textNormal"
+            android:lineSpacingMultiplier="1.1"
+            android:text="1、版本 1.1.1\n2、资产配置功能\n3、一键批量购买基金功能\n4、组合管理功能\n5、银行卡应用内绑定功能"
+            />
+    </LinearLayout>
+</LinearLayout>

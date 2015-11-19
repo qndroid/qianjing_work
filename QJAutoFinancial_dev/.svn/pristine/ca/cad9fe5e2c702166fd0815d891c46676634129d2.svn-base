@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.qianjing.finance.view.scrollview.ListenerScrollView
+            android:id="@+id/pull_to_refresh_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#192847"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/qucik_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="354dp"
+                    android:background="@drawable/bg_all_assemble"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_height" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_height"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/de_shen_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bg_assemble_click_drawable"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/investment_plan_support"
+                            android:textColor="@color/color_8fa5bc"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/icon_point_arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/color_8fa5bc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@+id/custom_vip_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_assemble_click_drawable"
+                            android:gravity="center_vertical" >
+
+                            <ImageView
+                                android:id="@+id/vip_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/icon_custom_vip" />
+
+                            <TextView
+                                android:id="@+id/text"
+                                android:layout_width="114dp"
+                                android:layout_height="34dp"
+                                android:layout_below="@id/vip_view"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/bg_invert_drawable"
+                                android:gravity="center"
+                                android:text="@string/custom_vip"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/bg_vip_info" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_8fa5bc" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:id="@+id/buy_house_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="69.25dp"
+                                android:background="@drawable/bg_assemble_click_drawable"
+                                android:gravity="center_vertical" >
+
+                                <ImageView
+                                    android:id="@+id/money_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/icon_buy_house" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/money_view"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="@string/title_assemble_house"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/color_8fa5bc" />
+
+                            <RelativeLayout
+                                android:id="@+id/marry_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="69.25dp"
+                                android:background="@drawable/bg_assemble_click_drawable"
+                                android:gravity="center_vertical" >
+
+                                <ImageView
+                                    android:id="@+id/yanglao_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/icon_marry" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/yanglao_view"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="@string/title_assemble_marry"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/color_8fa5bc" />
+
+                            <RelativeLayout
+                                android:id="@+id/education_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="69.25dp"
+                                android:background="@drawable/bg_assemble_click_drawable"
+                                android:gravity="center_vertical" >
+
+                                <ImageView
+                                    android:id="@+id/education_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/icon_education" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/education_view"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="@string/title_assemble_children"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/color_8fa5bc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/pension_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_assemble_click_drawable"
+                            android:gravity="center_vertical" >
+
+                            <ImageView
+                                android:id="@+id/marry_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/icon_pension" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/marry_view"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/title_assemble_pension"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_8fa5bc" />
+
+                        <RelativeLayout
+                            android:id="@+id/dream_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_assemble_click_drawable"
+                            android:gravity="center_vertical" >
+
+                            <ImageView
+                                android:id="@+id/dream_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/icon_dream" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/dream_view"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/title_assemble_dream"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_dddddd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/color_ff985a" />
+
+                        <RelativeLayout
+                            android:id="@+id/jingqu_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_quickbuy_click_drawable"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:id="@+id/jingqu_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/color_c0805a"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/jingqu_value_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/jingqu_view"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/default_number"
+                                android:textColor="@color/red_VI"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@id/jingqu_value_view"
+                                android:layout_below="@id/jingqu_view"
+                                android:layout_toRightOf="@id/jingqu_value_view"
+                                android:text="@string/str_percent"
+                                android:textColor="@color/red_VI"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/jingqu_value_view"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/rate_half_year"
+                                android:textColor="@color/color_999999"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_dddddd" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/color_63cd99" />
+
+                        <RelativeLayout
+                            android:id="@+id/wenjian_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_quickbuy_click_drawable"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:id="@+id/wenjian_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/color_62917a"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/wenjian_value_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/wenjian_view"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/default_number"
+                                android:textColor="@color/red_VI"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@id/wenjian_value_view"
+                                android:layout_below="@id/wenjian_view"
+                                android:layout_toRightOf="@id/wenjian_value_view"
+                                android:text="@string/str_percent"
+                                android:textColor="@color/red_VI"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/wenjian_value_view"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/rate_half_year"
+                                android:textColor="@color/color_999999"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_dddddd" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/color_7ea1de" />
+
+                        <RelativeLayout
+                            android:id="@+id/baoshou_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_quickbuy_click_drawable"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:id="@+id/baoshou_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/color_6f84a9"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/baoshou_value_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/baoshou_view"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/default_number"
+                                android:textColor="@color/red_VI"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@id/baoshou_value_view"
+                                android:layout_below="@id/baoshou_view"
+                                android:layout_toRightOf="@id/baoshou_value_view"
+                                android:text="@string/str_percent"
+                                android:textColor="@color/red_VI"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/baoshou_value_view"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/rate_half_year"
+                                android:textColor="@color/color_999999"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_steady"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_quickbuy_click_drawable"
+                            android:gravity="center_vertical"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/tv_steady_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="保本保息组合"
+                                android:textColor="@color/color_6f84a9"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_steady_profit_ratio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_steady_name"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/default_number"
+                                android:textColor="@color/red_VI"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@id/tv_steady_profit_ratio"
+                                android:layout_below="@id/tv_steady_name"
+                                android:layout_toRightOf="@id/tv_steady_profit_ratio"
+                                android:text="@string/str_percent"
+                                android:textColor="@color/red_VI"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_steady_profit_ratio_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_steady_profit_ratio"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:text="年化收益率"
+                                android:textColor="@color/color_999999"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_dddddd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_fix_invest"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_quickbuy_click_drawable" >
+
+                        <com.qianjing.finance.view.RotateTextView
+                            android:id="@+id/rtv_fix_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_fixed_invest"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="0dp"
+                            android:paddingTop="4dp"
+                            android:text="180天"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/tv_fix_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/default_number"
+                                    android:textColor="@color/red_VI"
+                                    android:textSize="23sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBaseline="@id/jingqu_value_view"
+                                    android:text="@string/str_percent"
+                                    android:textColor="@color/red_VI"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/fixed_deposit"
+                                android:textColor="@color/color_666666"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_dddddd" />
+
+                    <RelativeLayout
+                        android:id="@+id/fund_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_quickbuy_click_drawable"
+                        android:gravity="center" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_base"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/fund_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/icon_fund" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/zi_xuan"
+                                android:textColor="@color/color_666666"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_dddddd" />
+
+                    <RelativeLayout
+                        android:id="@+id/huoqi_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_quickbuy_click_drawable"
+                        android:gravity="center" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/huoqi_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/icon_account" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/str_wallettitle"
+                                android:textColor="@color/color_666666"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_dddddd" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="113dp"
+                    android:orientation="vertical" >
+
+                    <com.qianjing.finance.widget.wheelview.ImageCycleView
+                        android:id="@+id/ad_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+                <include layout="@layout/activity_quick_footer" />
+                <!-- 底栏高度补充 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/radio_button_height" />
+            </LinearLayout>
+        </com.qianjing.finance.view.scrollview.ListenerScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_efeff4"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/Mobile_num"
+                style="@style/editFullWidth"
+                android:hint="@string/input_number"
+                android:inputType="number"
+                android:maxLength="11" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/But_SignCode"
+                    style="@style/btnShort" />
+
+                <EditText
+                    android:id="@+id/Sign_code"
+                    style="@style/editFullWidth"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dip"
+                    android:layout_toLeftOf="@id/But_SignCode"
+                    android:hint="@string/input_sign_code"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/Set_pass"
+                style="@style/editFullWidth"
+                android:hint="@string/PassMSGinf"
+                android:inputType="textPassword"
+                android:maxLength="18" />
+
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/checkbox_style"
+                android:checked="false"
+                android:text="@string/show_pwd"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/textPS"
+                android:text="@string/XML_PASS_MIND"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/invite_view"
+                style="@style/editFullWidth"
+                android:layout_marginLeft="10dp"
+                android:hint="@string/input_invite_code"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/But_RegSure"
+                style="@style/btnNormal"
+                android:text="@string/REGISTER" />
+
+            <LinearLayout
+                style="@style/linearHorizontal"
+                android:layout_marginRight="10dip" >
+
+                <CheckBox
+                    android:id="@+id/check_agree"
+                    style="@style/checkTextNormal"
+                    android:text="" />
+
+                <TextView
+                    style="@style/textNormalSmall"
+                    android:text="@string/agree" />
+
+                <TextView
+                    android:id="@+id/TFree"
+                    style="@style/textNormalSmall"
+                    android:text="@string/qianjing_argument"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

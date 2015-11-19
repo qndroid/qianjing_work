@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qianjing="http://schemas.android.com/apk/res/com.qjautofinancial"
+    style="@style/layoutMain">
+    
+    <include 
+        layout="@layout/include_title"/>"
+    
+    <com.qianjing.finance.view.virtual.CustomDetailsView
+        android:id="@+id/cdv_list_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        qianjing:one_item="基金名称"
+        qianjing:two_item="持有份额"
+        qianjing:three_item="市值/元"/>
+    
+    <Button
+        android:id="@+id/btn_invest"
+        style="@style/btnNormal"
+        android:text="投资"/>
+
+</LinearLayout>

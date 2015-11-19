@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_assets"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+    <!-- com.qianjing.finance.view.scrollview.QJPullToRefresh -->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/ptrsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/yesterday_profit_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fund_yesterday_profit"
+                        android:textColor="@color/assets_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/yesterday_time_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/yesterday_profit_view"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/yesterday_profit_view"
+                        android:textColor="@color/assets_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/yesterday_profit_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/yesterday_profit_view"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="44dp"
+                        android:textColor="@color/red_VI" />
+
+                    <TextView
+                        android:id="@+id/leiji_profit_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/yesterday_profit_value"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/assets_text"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/leiji_profit_view"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/color_4d607d" />
+
+                    <TextView
+                        android:id="@+id/virtual_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="9dp"
+                        android:text="@string/virtual_total_asset"
+                        android:textColor="@color/assets_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/virtual_value_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/virtual_view"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/buying_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/virtual_value_view"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="30dp"
+                        android:text="123"
+                        android:textColor="@color/assets_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/redeming_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/buying_view"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/buying_view"
+                        android:text="345"
+                        android:textColor="@color/assets_text"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/market_value_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="18dp"
+                        android:textColor="@color/blue_deep_grey"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/low_stroke" />
+
+                    <TextView
+                        android:id="@+id/virtual_money_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="18dp"
+                        android:textColor="@color/blue_deep_grey"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/low_stroke" />
+
+                    <TextView
+                        android:id="@+id/scan_assert_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_dingcun_scan_asset"
+                        android:gravity="center"
+                        android:text="@string/time_disport_scan_aset"
+                        android:textColor="@color/blue_deep_grey"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/radio_button_height" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

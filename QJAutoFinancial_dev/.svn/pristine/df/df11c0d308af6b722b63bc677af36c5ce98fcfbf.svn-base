@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0eff5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_d7e0f1" >
+
+        <ImageView
+            android:id="@+id/calendar_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/icon_profit_calendar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/calendar_image_view"
+            android:text="@string/day_profit_date"
+            android:textColor="@color/blue_deep_grey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/profit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text="@string/day_profit_text"
+            android:textColor="@color/blue_deep_grey"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/profit_text_view"
+            android:background="@drawable/icon_day_profit" >
+        </ImageView>
+    </RelativeLayout>
+
+    <com.qianjing.finance.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/profit_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/color_00000000"
+        android:divider="@color/low_stroke"
+        android:dividerHeight="0.5dp"
+        android:fadeScrollbars="false"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+</LinearLayout>

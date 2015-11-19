@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutMain" >
+
+    <include layout="@layout/include_title" />
+    <!-- 电子邮箱布局 -->
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/white"
+            android:hint="您的新邮箱地址"
+            android:inputType="textEmailAddress"
+            android:padding="10dip"
+            android:textColor="@drawable/gray_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bt_emailsave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dip"
+            android:background="@drawable/btn_normal_selector"
+            android:padding="10dip"
+            android:text="保存"
+            android:textColor="@drawable/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 通讯地址 -->
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <EditText
+            android:maxLength="120"
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/white"
+            android:gravity="top|left"
+            android:lines="5"
+            android:padding="10dip"
+            android:textColor="@drawable/gray_text"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bt_addresssave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dip"
+            android:background="@drawable/btn_normal_selector"
+            android:padding="10dip"
+            android:text="保存"
+            android:textColor="@drawable/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 婚姻状况 -->
+
+    <LinearLayout
+        android:id="@+id/ll_marriage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View style="@style/viewLine" />
+
+        <RelativeLayout
+            android:id="@+id/rl_marriageno"
+            style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:text="未婚" />
+
+            <ImageView
+                android:id="@+id/im_marriageno"
+                style="@style/imageRight"
+                android:layout_width="15dip"
+                android:layout_height="10dip"
+                android:src="@drawable/checkmark" />
+        </RelativeLayout>
+
+        <View style="@style/viewLineMiddle" />
+
+        <RelativeLayout
+            android:id="@+id/rl_marriageyes"
+            style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:text="已婚" />
+
+            <ImageView
+                android:id="@+id/im_marriageyes"
+                style="@style/imageRight"
+                android:layout_width="15dip"
+                android:layout_height="10dip"
+                android:src="@drawable/checkmark" />
+        </RelativeLayout>
+
+        <View style="@style/viewLine" />
+    </LinearLayout>
+
+    <!-- 学历 -->
+
+    <LinearLayout
+        android:id="@+id/ll_education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View style="@style/viewLine" />
+
+        <RelativeLayout
+            android:id="@+id/rl_education01"
+            style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:text="初中及以下" />
+
+            <ImageView
+                android:id="@+id/im_education01"
+                style="@style/imageRight"
+                android:layout_width="15dip"
+                android:layout_height="10dip"
+                android:src="@drawable/checkmark" />
+        </RelativeLayout>
+
+        <View style="@style/viewLineMiddle" />
+
+        <RelativeLayout
+            android:id="@+id/rl_education02"
+            style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:text="高中/中专" />
+
+            <ImageView
+                android:id="@+id/im_education02"
+                style="@style/imageRight"
+                android:layout_width="15dip"
+                android:layout_height="10dip"
+                android:src="@drawable/checkmark" />
+        </RelativeLayout>
+
+        <View style="@style/viewLineMiddle" />
+
+        <RelativeLayout
+            android:id="@+id/rl_education03"
+            style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:text="大专/本科" />
+
+            <ImageView
+                android:id="@+id/im_education03"
+                style="@style/imageRight"
+                android:layout_width="15dip"
+                android:layout_height="10dip"
+                android:src="@drawable/checkmark" />
+        </RelativeLayout>
+
+        <View style="@style/viewLineMiddle" />
+
+        <RelativeLayout
+            android:id="@+id/rl_education04"
+            style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:text="硕士以上" />
+
+            <ImageView
+                android:id="@+id/im_education04"
+                style="@style/imageRight"
+                android:layout_width="15dip"
+                android:layout_height="10dip"
+                android:src="@drawable/checkmark" />
+        </RelativeLayout>
+
+        <View style="@style/viewLine" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_job"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dip"
+        android:divider="@drawable/gray_frame"
+        android:dividerHeight="0.5dip"
+        android:visibility="gone" >
+    </ListView>
+
+     <!-- 证券投资经验 -->
+
+    <LinearLayout
+        android:id="@+id/ll_invest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View style="@style/viewLine" />
+
+        <RelativeLayout
+            android:id="@+id/rl_investyes"
+            style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:text="有" />
+
+            <ImageView
+                android:id="@+id/im_investyes"
+                style="@style/imageRight"
+                android:layout_width="15dip"
+                android:layout_height="10dip"
+                android:src="@drawable/checkmark" />
+        </RelativeLayout>
+
+        <View style="@style/viewLineMiddle" />
+
+        <RelativeLayout
+            android:id="@+id/rl_investno"
+            style="@style/tableRow" >
+
+            <TextView
+                style="@style/textNormal"
+                android:text="无" />
+
+            <ImageView
+                android:id="@+id/im_investno"
+                style="@style/imageRight"
+                android:layout_width="15dip"
+                android:layout_height="10dip"
+                android:src="@drawable/checkmark" />
+        </RelativeLayout>
+
+        <View style="@style/viewLine" />
+    </LinearLayout>
+    
+
+</LinearLayout>

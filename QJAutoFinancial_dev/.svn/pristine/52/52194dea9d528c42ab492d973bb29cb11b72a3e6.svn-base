@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="title_height">44dip</dimen>
+    <dimen name="title_tab_image_width">96dip</dimen>
+    <dimen name="title_tab_image_height">32dip</dimen>
+    <dimen name="card_list_popup_width">300dip</dimen>
+    <dimen name="bound_remind_img_width">100dip</dimen>
+    <dimen name="bound_remind_img_height">107dip</dimen>
+    <dimen name="bound_remind_img_top">50dip</dimen>
+    <!-- 我的钱景首页持仓明细名称宽度 -->
+    <dimen name="myfund_holdlist_name_width">100dip</dimen>
+    <dimen name="myfund_holdlist_other_width">75dip</dimen>
+    <!-- 我的钱景首页交易明细日期项宽度 -->
+    <dimen name="myfund_tradelist_date_width">70dip</dimen>
+    <!-- 我的钱景首页交易明细其他项宽度 -->
+    <dimen name="myfund_tradelist_width">60dip</dimen>
+    <!-- 我的钱景详情资金项宽度 -->
+    <dimen name="myfund_detail_money_width">80dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen>
+    <dimen name="bottom_tab_font_size">18.0dip</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="purchase_details_item">15sp</dimen>
+
+    <!-- 底部按钮高度 -->
+    <dimen name="radio_button_height">55dp</dimen>
+
+    <!-- 资产bar的信息 -->
+    <dimen name="bar_height">30dp</dimen>
+    <dimen name="text_padding">0dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <!-- 虚拟交易字体 -->
+    <dimen name="yellow_size">16sp</dimen>
+    <dimen name="yellow_value_size">18sp</dimen>
+
+    <!-- 我的资产布局比例 -->
+    <dimen name="assets_common">52dp</dimen>
+    <dimen name="assets_head">155dp</dimen>
+    <dimen name="assets_profit">64dp</dimen>
+
+    <!-- 历史记录详情页 -->
+    <dimen name="text_common1">13sp</dimen>
+    <dimen name="text_balance_item_common">15sp</dimen>
+
+    <!-- 详情页在平衡入口高度 -->
+    <dimen name="balance_enter">52dp</dimen>
+    <dimen name="balance_enter_2">30dp</dimen>
+    <dimen name="activity_dialog_height">422dp</dimen>
+    
+    <!-- 组合详情界面 -->
+    <dimen name="holding_title_height">40dp</dimen>
+
+</resources>

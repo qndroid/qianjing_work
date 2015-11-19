@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    style="@style/layoutMain" >
+
+    <RelativeLayout style="@style/title" >
+
+        <TextView
+            android:id="@+id/title_middle_text"
+            style="@style/titleText" />
+
+        <Button
+            android:id="@+id/bt_back"
+            style="@style/imageNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/title_left_but"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnTitleRight"
+            style="@style/textNormal"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="#00000000"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:text="注册"
+            android:textSize="18sp"
+            android:textColor="@drawable/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+<!--     <include layout="@layout/title" /> -->
+
+    <WebView
+        android:id="@+id/WebViewsIntr"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_noline_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        >
+        
+        <ImageView 
+            android:id="@+id/iv_net"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_noline"/>
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

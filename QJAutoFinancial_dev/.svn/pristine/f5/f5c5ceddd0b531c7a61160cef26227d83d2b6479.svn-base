@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:background="@drawable/corners_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="提示"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15dp" >
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/ProgressDwonApk"
+                android:background="@drawable/shape_progress_back" />
+        </RelativeLayout>
+
+        <View
+            style="@style/viewLine"
+            android:layout_marginTop="15dip" />
+
+        <Button
+            android:id="@+id/ButSure"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:background="#00000000"
+            android:text="确认"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>
